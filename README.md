@@ -50,7 +50,7 @@ To demonstrate the tool's capabilities, a sample report generated from a synthet
 
 **Interactive Report (HTML)**
 
-The core output is an interactive HTML report. You can view a sample of this report to experience the full functionality of the tool.
+The core output is an interactive HTML report. You can view a sample of this report to experience the full functionality of the tool
 
 * [**View Sample Report**](https://rao-anas-riaz.github.io/R-Auto-Data-Profiling/report_outputs/feature_report.html)
 
@@ -64,6 +64,7 @@ A companion CSV file is generated with all the summarized data. This is useful f
 
 
 This project is made available for informational purposes only. The intellectual property and source code remain the exclusive property of the author. No part of the source code may be copied, distributed, or modified without explicit permission.
+
 
 
 
