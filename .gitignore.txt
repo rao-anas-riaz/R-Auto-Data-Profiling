@@ -1,0 +1,9 @@
+# R History files
+.Rhistory
+.Rapp.history
+
+# R Session Data files
+.RData
+
+# RStudio files
+.Rproj.user/
