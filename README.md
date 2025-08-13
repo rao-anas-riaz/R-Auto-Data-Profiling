@@ -52,15 +52,16 @@ To demonstrate the tool's capabilities, a sample report generated from a synthet
 
 The core output is an interactive HTML report. You can view a sample of this report to experience the full functionality of the tool.
 
-* [**View Sample Report**](https://github.com/rao-anas-riaz/R-Data-Profiling/blob/main/report_outputs/feature_report.html)
+* [**View Sample Report**](https://github.com/rao-anas-riaz/R-Auto-Data-Profiling/blob/main/report_outputs/feature_report.html)
 
 **Summary Statistics (CSV)**
 
 A companion CSV file is generated with all the summarized data. This is useful for anyone who needs to programmatically access the profiling results.
 
-* [**View Sample Summary**](https://github.com/rao-anas-riaz/R-Data-Profiling/blob/main/report_outputs/feature_summary.csv)
+* [**View Sample Summary**](https://github.com/rao-anas-riaz/R-Auto-Data-Profiling/blob/main/report_outputs/feature_summary.csv)
 
 ### License
 
 
 This project is made available for informational purposes only. The intellectual property and source code remain the exclusive property of the author. No part of the source code may be copied, distributed, or modified without explicit permission.
+
