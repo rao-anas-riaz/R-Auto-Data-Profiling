@@ -1,0 +1,721 @@
+[2025-08-13 16:57:17] INFO: Log file 'report_outputs/profiling_log.txt' successfully opened. All messages will be logged here and to console.
+[2025-08-13 16:57:17] INFO: Starting data profiling report generation.
+[2025-08-13 16:57:17] INFO: Beginning script execution with provided parameters.
+[2025-08-13 16:57:17] INFO: Parameters: output_dir='C:\Users\raoan\Documents\report_outputs', log_file_name='profiling_log.txt', generate_plots=TRUE.
+[2025-08-13 16:57:17] DEBUG: [PHASE 2 START] Global log_file_conn status: is.null: FALSE, isOpen: TRUE.
+[2025-08-13 16:57:17] INFO: Defined 13 required R packages.
+[2025-08-13 16:57:17] INFO: Plot generation is enabled. Ensuring plotting libraries are available.
+[2025-08-13 16:57:17] DEBUG: Helper function 'install_if_missing' defined.
+[2025-08-13 16:57:17] INFO: Checking for missing R packages...
+[2025-08-13 16:57:17] INFO: All required packages are already installed.
+[2025-08-13 16:57:17] INFO: Loading required packages into the current R session...
+[2025-08-13 16:57:17] DEBUG: Successfully loaded package: data.table.
+[2025-08-13 16:57:17] DEBUG: Successfully loaded package: dplyr.
+[2025-08-13 16:57:17] DEBUG: Successfully loaded package: ggplot2.
+[2025-08-13 16:57:17] DEBUG: Successfully loaded package: plotly.
+[2025-08-13 16:57:17] DEBUG: Successfully loaded package: lubridate.
+[2025-08-13 16:57:17] DEBUG: Successfully loaded package: stringr.
+[2025-08-13 16:57:17] DEBUG: Successfully loaded package: htmltools.
+[2025-08-13 16:57:17] DEBUG: Successfully loaded package: htmlwidgets.
+[2025-08-13 16:57:17] DEBUG: Successfully loaded package: uuid.
+[2025-08-13 16:57:17] DEBUG: Successfully loaded package: vcd.
+[2025-08-13 16:57:17] DEBUG: Successfully loaded package: vcdExtra.
+[2025-08-13 16:57:17] DEBUG: Successfully loaded package: RColorBrewer.
+[2025-08-13 16:57:17] DEBUG: Successfully loaded package: base64enc.
+[2025-08-13 16:57:17] INFO: All required packages loaded successfully, ensuring a stable environment.
+[2025-08-13 16:57:17] DEBUG: [PHASE 2 END] Global log_file_conn status: is.null: FALSE, isOpen: TRUE.
+[2025-08-13 16:57:17] DEBUG: [PHASE 3 START] Global log_file_conn status: is.null: FALSE, isOpen: TRUE.
+[2025-08-13 16:57:17] INFO: Input is already a data.table. Creating a copy for processing to prevent in-place modification.
+[2025-08-13 16:57:17] INFO: Input data 'test_data' successfully prepared as a data.table with 1500 rows and 12 columns.
+[2025-08-13 16:57:17] INFO: Dataframe column names converted to lowercase for consistent processing and matching.
+[2025-08-13 16:57:17] INFO: Provided date_col_name 'date_col' converted to lowercase.
+[2025-08-13 16:57:17] INFO: Provided target_col_name 'numeric_target' converted to lowercase.
+[2025-08-13 16:57:17] INFO: Validating and processing date column: 'date_col'.
+[2025-08-13 16:57:17] INFO: Date column 'date_col' found and successfully converted to Date type.
+[2025-08-13 16:57:17] INFO: Validating target column: 'numeric_target'.
+[2025-08-13 16:57:17] INFO: Target column 'numeric_target' found and validated as numeric.
+[2025-08-13 16:57:17] INFO: Reference date for 'days_since' calculations set to: 2027-02-08. This date is used for temporal feature transformations.
+[2025-08-13 16:57:17] DEBUG: Infix operator '%||%' defined for convenient default value assignment.
+[2025-08-13 16:57:17] DEBUG: [PHASE 3 END] Global log_file_conn status: is.null: FALSE, isOpen: TRUE.
+[2025-08-13 16:57:17] DEBUG: [PHASE 4 START] Global log_file_conn status: is.null: FALSE, isOpen: TRUE.
+[2025-08-13 16:57:17] DEBUG: [PHASE 4 END] Global log_file_conn status: is.null: FALSE, isOpen: TRUE.
+[2025-08-13 16:57:17] DEBUG: [PHASE 5 START] Global log_file_conn status: is.null: FALSE, isOpen: TRUE.
+[2025-08-13 16:57:17] INFO: Executing main processing logic: filtering data, generating summary, and preparing for plotting.
+[2025-08-13 16:57:17] INFO: No 'report_features' specified. All columns in the input data will be profiled.
+[2025-08-13 16:57:17] INFO: Checking for other date/time columns to convert to 'days_since_' format.
+[2025-08-13 16:57:17] INFO: Converting the following date/time columns to 'days_since_': datetime_col.
+[2025-08-13 16:57:17] DEBUG: Successfully converted date column 'datetime_col' to numeric 'days_since_' feature 'days_since_datetime_col'.
+[2025-08-13 16:57:17] INFO: Initiating data processing and summarization for 13 features.
+[2025-08-13 16:57:17] INFO: Entering function 'process_data'. Initiating overall data processing workflow.
+[2025-08-13 16:57:17] INFO: Processing data for 13 specified features: primary_key, date_col, numeric_target, integer_rating, logical_flag, category_moderate, category_skewed, category_high_card, mixed_nulls_text, numeric_with_na, datetime_col, character_comments, days_since_datetime_col.
+[2025-08-13 16:57:17] INFO: Entering function 'detect_data_types'. Analyzing 13 features to infer their data types.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Processing feature: 'primary_key'. Extracting column data.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'primary_key': Filtered 1500 non-empty/non-null values.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'primary_key' detected as 'integer' type.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Processing feature: 'date_col'. Extracting column data.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'date_col': Filtered 1500 non-empty/non-null values.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'date_col' detected as 'date' type (100.00% success rate).
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Processing feature: 'numeric_target'. Extracting column data.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'numeric_target': Filtered 1500 non-empty/non-null values.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'numeric_target' detected as 'numeric' type (decimal or floating point).
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Processing feature: 'integer_rating'. Extracting column data.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'integer_rating': Filtered 1480 non-empty/non-null values.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'integer_rating' detected as 'integer' type.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Processing feature: 'logical_flag'. Extracting column data.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'logical_flag': Filtered 1500 non-empty/non-null values.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'logical_flag' detected as 'logical' type based on unique values.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Processing feature: 'category_moderate'. Extracting column data.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'category_moderate': Filtered 1500 non-empty/non-null values.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'category_moderate' defaulted to 'character' type after specific type checks.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Processing feature: 'category_skewed'. Extracting column data.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'category_skewed': Filtered 1480 non-empty/non-null values.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'category_skewed' defaulted to 'character' type after specific type checks.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Processing feature: 'category_high_card'. Extracting column data.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'category_high_card': Filtered 1500 non-empty/non-null values.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'category_high_card' defaulted to 'character' type after specific type checks.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Processing feature: 'mixed_nulls_text'. Extracting column data.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'mixed_nulls_text': Filtered 375 non-empty/non-null values.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'mixed_nulls_text' defaulted to 'character' type after specific type checks.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Processing feature: 'numeric_with_na'. Extracting column data.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'numeric_with_na': Filtered 1450 non-empty/non-null values.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'numeric_with_na' detected as 'numeric' type (decimal or floating point).
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Processing feature: 'datetime_col'. Extracting column data.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'datetime_col': Filtered 1500 non-empty/non-null values.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'datetime_col' detected as 'POSIXct' type (100.00% success rate).
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Processing feature: 'character_comments'. Extracting column data.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'character_comments': Filtered 920 non-empty/non-null values.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'character_comments' defaulted to 'character' type after specific type checks.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Processing feature: 'days_since_datetime_col'. Extracting column data.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'days_since_datetime_col': Filtered 1500 non-empty/non-null values.
+[2025-08-13 16:57:17] DEBUG: [detect_data_types] Feature 'days_since_datetime_col' detected as 'integer' type.
+[2025-08-13 16:57:17] INFO: Exiting function 'detect_data_types'. All specified features processed.
+[2025-08-13 16:57:17] INFO: [process_data] Data types detected for 13 features. Reviewing detected types for consistency.
+[2025-08-13 16:57:17] DEBUG: [process_data] Detected types table: 
+Index: <feature_name>
+               feature_name data_type
+                     <char>    <char>
+ 1:             primary_key   integer
+ 2:                date_col      date
+ 3:          numeric_target   numeric
+ 4:          integer_rating   integer
+ 5:            logical_flag   logical
+ 6:       category_moderate character
+ 7:         category_skewed character
+ 8:      category_high_card character
+ 9:        mixed_nulls_text character
+10:         numeric_with_na   numeric
+11:            datetime_col   POSIXct
+12:      character_comments character
+13: days_since_datetime_col   integer
+
+[2025-08-13 16:57:17] INFO: Entering function 'summarize_feature' for individual feature: 'primary_key'.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'primary_key': Number of unique non-NA values = 1500, Is primary key = TRUE.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'primary_key': Null percentages - Logical NA: 0.00%, Char NA: 0.00%, Empty String: 0.00%.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'primary_key': Top 15 categories identified. Top category percentage: 0.07%. All top N percentages: 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07.
+[2025-08-13 16:57:17] INFO: Entering function 'summarize_feature' for individual feature: 'date_col'.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'date_col': Number of unique non-NA values = 1500, Is primary key = TRUE.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'date_col': Null percentages - Logical NA: 0.00%, Char NA: 0.00%, Empty String: 0.00%.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'date_col': Top 15 categories identified. Top category percentage: 0.07%. All top N percentages: 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07.
+[2025-08-13 16:57:17] INFO: Entering function 'summarize_feature' for individual feature: 'numeric_target'.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'numeric_target': Number of unique non-NA values = 1500, Is primary key = TRUE.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'numeric_target': Null percentages - Logical NA: 0.00%, Char NA: 0.00%, Empty String: 0.00%.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'numeric_target': Top 15 categories identified. Top category percentage: 0.07%. All top N percentages: 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07.
+[2025-08-13 16:57:17] INFO: Entering function 'summarize_feature' for individual feature: 'integer_rating'.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'integer_rating': Number of unique non-NA values = 5, Is primary key = FALSE.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'integer_rating': Null percentages - Logical NA: 1.33%, Char NA: 0.00%, Empty String: 0.00%.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'integer_rating': Top 6 categories identified. Top category percentage: 20.80%. All top N percentages: 20.8, 19.87, 19.67, 19.4, 18.93, 1.33.
+[2025-08-13 16:57:17] INFO: Entering function 'summarize_feature' for individual feature: 'logical_flag'.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'logical_flag': Number of unique non-NA values = 2, Is primary key = FALSE.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'logical_flag': Null percentages - Logical NA: 0.00%, Char NA: 0.00%, Empty String: 0.00%.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'logical_flag': Top 2 categories identified. Top category percentage: 70.93%. All top N percentages: 70.93, 29.07.
+[2025-08-13 16:57:17] INFO: Entering function 'summarize_feature' for individual feature: 'category_moderate'.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'category_moderate': Number of unique non-NA values = 10, Is primary key = FALSE.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'category_moderate': Null percentages - Logical NA: 0.00%, Char NA: 0.00%, Empty String: 0.00%.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'category_moderate': Top 10 categories identified. Top category percentage: 11.47%. All top N percentages: 11.47, 10.87, 10.73, 10.6, 10, 9.6, 9.53, 9.4, 9.2, 8.6.
+[2025-08-13 16:57:17] INFO: Entering function 'summarize_feature' for individual feature: 'category_skewed'.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'category_skewed': Number of unique non-NA values = 3, Is primary key = FALSE.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'category_skewed': Null percentages - Logical NA: 0.00%, Char NA: 1.33%, Empty String: 0.00%.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'category_skewed': Top 4 categories identified. Top category percentage: 89.40%. All top N percentages: 89.4, 5, 4.27, 1.33.
+[2025-08-13 16:57:17] INFO: Entering function 'summarize_feature' for individual feature: 'category_high_card'.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'category_high_card': Number of unique non-NA values = 1500, Is primary key = TRUE.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'category_high_card': Null percentages - Logical NA: 0.00%, Char NA: 0.00%, Empty String: 0.00%.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'category_high_card': Top 15 categories identified. Top category percentage: 0.07%. All top N percentages: 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07.
+[2025-08-13 16:57:17] INFO: Entering function 'summarize_feature' for individual feature: 'mixed_nulls_text'.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'mixed_nulls_text': Number of unique non-NA values = 2, Is primary key = FALSE.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'mixed_nulls_text': Null percentages - Logical NA: 13.00%, Char NA: 37.67%, Empty String: 24.33%.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'mixed_nulls_text': Top 3 categories identified. Top category percentage: 75.00%. All top N percentages: 75, 12.73, 12.27.
+[2025-08-13 16:57:17] INFO: Entering function 'summarize_feature' for individual feature: 'numeric_with_na'.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'numeric_with_na': Number of unique non-NA values = 1450, Is primary key = FALSE.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'numeric_with_na': Null percentages - Logical NA: 3.33%, Char NA: 0.00%, Empty String: 0.00%.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'numeric_with_na': Top 15 categories identified. Top category percentage: 3.33%. All top N percentages: 3.33, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07.
+[2025-08-13 16:57:17] INFO: Entering function 'summarize_feature' for individual feature: 'datetime_col'.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'datetime_col': Number of unique non-NA values = 1500, Is primary key = TRUE.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'datetime_col': Null percentages - Logical NA: 0.00%, Char NA: 0.00%, Empty String: 0.00%.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'datetime_col': Top 15 categories identified. Top category percentage: 0.07%. All top N percentages: 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07, 0.07.
+[2025-08-13 16:57:17] INFO: Entering function 'summarize_feature' for individual feature: 'character_comments'.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'character_comments': Number of unique non-NA values = 3, Is primary key = FALSE.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'character_comments': Null percentages - Logical NA: 18.73%, Char NA: 0.00%, Empty String: 19.93%.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'character_comments': Top 4 categories identified. Top category percentage: 38.67%. All top N percentages: 38.67, 21.8, 19.93, 19.6.
+[2025-08-13 16:57:17] INFO: Entering function 'summarize_feature' for individual feature: 'days_since_datetime_col'.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'days_since_datetime_col': Number of unique non-NA values = 11, Is primary key = FALSE.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'days_since_datetime_col': Null percentages - Logical NA: 0.00%, Char NA: 0.00%, Empty String: 0.00%.
+[2025-08-13 16:57:17] DEBUG: [summarize_feature] Feature 'days_since_datetime_col': Top 11 categories identified. Top category percentage: 9.60%. All top N percentages: 9.6, 9.6, 9.6, 9.6, 9.6, 9.6, 9.6, 9.6, 9.6, 8, 5.6.
+[2025-08-13 16:57:17] INFO: [process_data] Individual feature summaries generated for all processed features.
+[2025-08-13 16:57:17] DEBUG: [process_data] All individual feature summaries successfully combined into 'summary_dt'.
+[2025-08-13 16:57:17] DEBUG: [process_data] Summaries successfully merged with detected data types.
+[2025-08-13 16:57:17] INFO: Exiting function 'process_data'. Data processing and summarization complete.
+[2025-08-13 16:57:17] INFO: Data processing complete. Generated summary table for 13 features.
+[2025-08-13 16:57:17] DEBUG: [PHASE 5 END] Global log_file_conn status: is.null: FALSE, isOpen: TRUE.
+[2025-08-13 16:57:17] INFO: Starting additional data type check for two-valued columns.
+[2025-08-13 16:57:17] INFO: Feature 'mixed_nulls_text' (type: 'character', unique values: 2) updated to type 'character-logical' as it contains two unique values.
+[2025-08-13 16:57:17] INFO: Finished additional data type check for two-valued columns.
+[2025-08-13 16:57:17] DEBUG: [PHASE 6 START] Global log_file_conn status: is.null: FALSE, isOpen: TRUE.
+[2025-08-13 16:57:17] INFO: Starting feature exclusion pipeline for plotting purposes.
+[2025-08-13 16:57:17] INFO: Entering 'exclude_features'. Identifying features that should be excluded from plotting based on defined criteria.
+[2025-08-13 16:57:17] DEBUG: [exclude_features] Evaluating feature 'category_high_card' for exclusion.
+[2025-08-13 16:57:17] DEBUG: [exclude_features] Evaluating feature 'category_moderate' for exclusion.
+[2025-08-13 16:57:17] DEBUG: [exclude_features] Evaluating feature 'category_skewed' for exclusion.
+[2025-08-13 16:57:17] INFO: Feature 'category_skewed': Top category volume (89.4%) exceeds 'max_value_pct' threshold (80%). Excluded from plotting to focus on more diverse features.
+[2025-08-13 16:57:17] DEBUG: [exclude_features] Evaluating feature 'character_comments' for exclusion.
+[2025-08-13 16:57:17] DEBUG: [exclude_features] Evaluating feature 'date_col' for exclusion.
+[2025-08-13 16:57:17] DEBUG: [exclude_features] Evaluating feature 'datetime_col' for exclusion.
+[2025-08-13 16:57:17] DEBUG: [exclude_features] Evaluating feature 'days_since_datetime_col' for exclusion.
+[2025-08-13 16:57:17] DEBUG: [exclude_features] Evaluating feature 'integer_rating' for exclusion.
+[2025-08-13 16:57:17] DEBUG: [exclude_features] Evaluating feature 'logical_flag' for exclusion.
+[2025-08-13 16:57:17] DEBUG: [exclude_features] Evaluating feature 'mixed_nulls_text' for exclusion.
+[2025-08-13 16:57:17] DEBUG: [exclude_features] Evaluating feature 'numeric_target' for exclusion.
+[2025-08-13 16:57:17] DEBUG: [exclude_features] Evaluating feature 'numeric_with_na' for exclusion.
+[2025-08-13 16:57:17] DEBUG: [exclude_features] Evaluating feature 'primary_key' for exclusion.
+[2025-08-13 16:57:17] INFO: List of 1 excluded features with reasons saved to: 'report_outputs/removed_features.txt'. This file provides a record of excluded features.
+[2025-08-13 16:57:17] INFO: Exiting 'exclude_features'. Total unique features identified for exclusion: 1.
+[2025-08-13 16:57:17] INFO: 12 features remain for binning and plotting after exclusions. 1 features were excluded.
+[2025-08-13 16:57:17] INFO: Initiating creation of binned columns (_binned) for plotting-eligible features.
+[2025-08-13 16:57:17] INFO: Entering 'create_binned_dataframe'. Preparing binned versions of features for plotting.
+[2025-08-13 16:57:17] INFO: Processing feature 'category_high_card' for binning.
+[2025-08-13 16:57:17] DEBUG: Feature 'category_high_card' has detected data type 'character'.
+[2025-08-13 16:57:17] DEBUG: Feature 'category_high_card': Identified 0 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-13 16:57:17] DEBUG: Binning logic for character feature 'category_high_card'. Total non-null values: 1500.
+[2025-08-13 16:57:17] INFO: Character 'category_high_card': Unique non-NULL values (1500) exceed 'binning_threshold' (75). Grouping less frequent categories into 'others'.
+[2025-08-13 16:57:17] INFO: Character 'category_high_card' binned into top 75 categories plus 'others'.
+[2025-08-13 16:57:17] DEBUG: Binned column 'category_high_card_binned' created in df_binned for feature 'category_high_card'.
+[2025-08-13 16:57:17] INFO: Processing feature 'category_moderate' for binning.
+[2025-08-13 16:57:17] DEBUG: Feature 'category_moderate' has detected data type 'character'.
+[2025-08-13 16:57:17] DEBUG: Feature 'category_moderate': Identified 0 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-13 16:57:17] DEBUG: Binning logic for character feature 'category_moderate'. Total non-null values: 1500.
+[2025-08-13 16:57:17] INFO: Character 'category_moderate': Unique non-NULL values (10) are within 'binning_threshold' (75). No aggressive binning applied, using raw categories.
+[2025-08-13 16:57:17] DEBUG: Binned column 'category_moderate_binned' created in df_binned for feature 'category_moderate'.
+[2025-08-13 16:57:17] INFO: Processing feature 'character_comments' for binning.
+[2025-08-13 16:57:17] DEBUG: Feature 'character_comments' has detected data type 'character'.
+[2025-08-13 16:57:17] DEBUG: Feature 'character_comments': Identified 580 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-13 16:57:17] DEBUG: Binning logic for character feature 'character_comments'. Total non-null values: 920.
+[2025-08-13 16:57:17] INFO: Character 'character_comments': Unique non-NULL values (3) are within 'binning_threshold' (75). No aggressive binning applied, using raw categories.
+[2025-08-13 16:57:17] DEBUG: Binned column 'character_comments_binned' created in df_binned for feature 'character_comments'.
+[2025-08-13 16:57:17] INFO: Processing feature 'date_col' for binning.
+[2025-08-13 16:57:17] DEBUG: Feature 'date_col' has detected data type 'date'.
+[2025-08-13 16:57:17] DEBUG: Feature 'date_col': Identified 0 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-13 16:57:17] DEBUG: Binning logic for date/POSIXct feature 'date_col'. Total non-null values: 1500.
+[2025-08-13 16:57:17] INFO: Date 'date_col': Unique non-NULL values (1500) exceed 'binning_threshold' (75). Applying time-interval based binning.
+[2025-08-13 16:57:17] DEBUG: Date 'date_col': Date range is from '2023-01-01' to '2027-02-08' (1499 days).
+[2025-08-13 16:57:17] DEBUG: Date feature 'date_col' (range: 1499 days): Determined optimal binning interval unit: 'quarter'.
+[2025-08-13 16:57:19] INFO: Date feature 'date_col' binned successfully into 17 distinct time intervals.
+[2025-08-13 16:57:19] DEBUG: Binned column 'date_col_binned' created in df_binned for feature 'date_col'.
+[2025-08-13 16:57:19] INFO: Processing feature 'datetime_col' for binning.
+[2025-08-13 16:57:19] DEBUG: Feature 'datetime_col' has detected data type 'POSIXct'.
+[2025-08-13 16:57:19] DEBUG: Feature 'datetime_col': Identified 0 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-13 16:57:19] DEBUG: Binning logic for date/POSIXct feature 'datetime_col'. Total non-null values: 1500.
+[2025-08-13 16:57:19] INFO: Date 'datetime_col': Unique non-NULL values (11) are within 'binning_threshold' (75). No binning applied, using raw date values.
+[2025-08-13 16:57:19] DEBUG: Binned column 'datetime_col_binned' created in df_binned for feature 'datetime_col'.
+[2025-08-13 16:57:19] INFO: Processing feature 'days_since_datetime_col' for binning.
+[2025-08-13 16:57:19] DEBUG: Feature 'days_since_datetime_col' has detected data type 'integer'.
+[2025-08-13 16:57:19] DEBUG: Feature 'days_since_datetime_col': Identified 0 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-13 16:57:19] DEBUG: Binning logic for numeric/integer feature 'days_since_datetime_col'. Total non-null values: 1500.
+[2025-08-13 16:57:19] INFO: Numeric 'days_since_datetime_col': Unique non-NULL values (11) are within 'binning_threshold' (75). No further binning applied, using raw values.
+[2025-08-13 16:57:19] DEBUG: Binned column 'days_since_datetime_col_binned' created in df_binned for feature 'days_since_datetime_col'.
+[2025-08-13 16:57:19] INFO: Processing feature 'integer_rating' for binning.
+[2025-08-13 16:57:19] DEBUG: Feature 'integer_rating' has detected data type 'integer'.
+[2025-08-13 16:57:19] DEBUG: Feature 'integer_rating': Identified 20 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-13 16:57:19] DEBUG: Binning logic for numeric/integer feature 'integer_rating'. Total non-null values: 1480.
+[2025-08-13 16:57:19] INFO: Numeric 'integer_rating': Unique non-NULL values (5) are within 'binning_threshold' (75). No further binning applied, using raw values.
+[2025-08-13 16:57:19] DEBUG: Binned column 'integer_rating_binned' created in df_binned for feature 'integer_rating'.
+[2025-08-13 16:57:19] INFO: Processing feature 'logical_flag' for binning.
+[2025-08-13 16:57:19] DEBUG: Feature 'logical_flag' has detected data type 'logical'.
+[2025-08-13 16:57:19] DEBUG: Feature 'logical_flag': Identified 0 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-13 16:57:19] INFO: Logical 'logical_flag': Converted to character for display. No binning applied as it's binary.
+[2025-08-13 16:57:19] DEBUG: Binned column 'logical_flag_binned' created in df_binned for feature 'logical_flag'.
+[2025-08-13 16:57:19] INFO: Processing feature 'mixed_nulls_text' for binning.
+[2025-08-13 16:57:19] DEBUG: Feature 'mixed_nulls_text' has detected data type 'character-logical'.
+[2025-08-13 16:57:19] DEBUG: Feature 'mixed_nulls_text': Identified 1125 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-13 16:57:19] INFO: Logical 'mixed_nulls_text': Converted to character for display. No binning applied as it's binary.
+[2025-08-13 16:57:19] DEBUG: Binned column 'mixed_nulls_text_binned' created in df_binned for feature 'mixed_nulls_text'.
+[2025-08-13 16:57:19] INFO: Processing feature 'numeric_target' for binning.
+[2025-08-13 16:57:19] DEBUG: Feature 'numeric_target' has detected data type 'numeric'.
+[2025-08-13 16:57:19] DEBUG: Feature 'numeric_target': Identified 0 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-13 16:57:19] DEBUG: Binning logic for numeric/integer feature 'numeric_target'. Total non-null values: 1500.
+[2025-08-13 16:57:19] INFO: Numeric 'numeric_target': Unique non-NULL values (1500) exceed 'binning_threshold' (75). Applying binning techniques.
+[2025-08-13 16:57:19] DEBUG: Numeric 'numeric_target': Range is [100.42, 999.57].
+[2025-08-13 16:57:19] DEBUG: Numeric 'numeric_target': Initial breaks generated. Count: 104.
+[2025-08-13 16:57:19] DEBUG: Numeric 'numeric_target': Values cut into 103 bins.
+[2025-08-13 16:57:19] INFO: Numeric 'numeric_target' successfully binned into 46 categories with formatted labels.
+[2025-08-13 16:57:19] DEBUG: Binned column 'numeric_target_binned' created in df_binned for feature 'numeric_target'.
+[2025-08-13 16:57:19] INFO: Processing feature 'numeric_with_na' for binning.
+[2025-08-13 16:57:19] DEBUG: Feature 'numeric_with_na' has detected data type 'numeric'.
+[2025-08-13 16:57:19] DEBUG: Feature 'numeric_with_na': Identified 50 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-13 16:57:19] DEBUG: Binning logic for numeric/integer feature 'numeric_with_na'. Total non-null values: 1450.
+[2025-08-13 16:57:19] INFO: Numeric 'numeric_with_na': Unique non-NULL values (1450) exceed 'binning_threshold' (75). Applying binning techniques.
+[2025-08-13 16:57:19] DEBUG: Numeric 'numeric_with_na': Range is [0.06, 99.99].
+[2025-08-13 16:57:19] DEBUG: Numeric 'numeric_with_na': Initial breaks generated. Count: 50.
+[2025-08-13 16:57:19] DEBUG: Numeric 'numeric_with_na': Values cut into 49 bins.
+[2025-08-13 16:57:19] INFO: Numeric 'numeric_with_na' successfully binned into 21 categories with formatted labels.
+[2025-08-13 16:57:19] DEBUG: Binned column 'numeric_with_na_binned' created in df_binned for feature 'numeric_with_na'.
+[2025-08-13 16:57:19] INFO: Processing feature 'primary_key' for binning.
+[2025-08-13 16:57:19] DEBUG: Feature 'primary_key' has detected data type 'integer'.
+[2025-08-13 16:57:19] DEBUG: Feature 'primary_key': Identified 0 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-13 16:57:19] DEBUG: Binning logic for numeric/integer feature 'primary_key'. Total non-null values: 1500.
+[2025-08-13 16:57:19] INFO: Numeric 'primary_key': Unique non-NULL values (1500) exceed 'binning_threshold' (75). Applying binning techniques.
+[2025-08-13 16:57:19] DEBUG: Numeric 'primary_key': Range is [1.00, 1500.00].
+[2025-08-13 16:57:19] DEBUG: Numeric 'primary_key': Initial breaks generated. Count: 70.
+[2025-08-13 16:57:19] DEBUG: Numeric 'primary_key': Values cut into 69 bins.
+[2025-08-13 16:57:19] INFO: Numeric 'primary_key' successfully binned into 31 categories with formatted labels.
+[2025-08-13 16:57:19] DEBUG: Binned column 'primary_key_binned' created in df_binned for feature 'primary_key'.
+[2025-08-13 16:57:19] INFO: Exiting 'create_binned_dataframe'. Binned dataframe created.
+[2025-08-13 16:57:19] INFO: Created df_binned with 1500 rows and 25 columns. 12 features successfully binned for plotting.
+[2025-08-13 16:57:19] INFO: Initiating creation of 'smalls' grouped columns (_smalls) for plotting-eligible features.
+[2025-08-13 16:57:19] INFO: Entering 'create_smalls_dataframe'. Applying 'smalls' grouping to binned features.
+[2025-08-13 16:57:19] INFO: Calculated 'smalls' volume threshold: 75.00 rows (equivalent to 5.00% of total 1500 rows).
+[2025-08-13 16:57:19] DEBUG: Applying smalls grouping to binned column 'category_high_card_binned' for feature 'category_high_card'.
+[2025-08-13 16:57:19] DEBUG: Feature 'category_high_card': Frequency table for binned column created with 1500 unique categories.
+[2025-08-13 16:57:19] DEBUG: Feature 'category_high_card': Identified 75 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-13 16:57:19] INFO: Grouped 75 unique categories into 'smalls' for feature 'category_high_card'. These categories had volume less than 5.00% (75 rows).
+[2025-08-13 16:57:19] DEBUG: New column 'category_high_card_smalls' (with 'smalls' grouping) created in df_smalls for feature 'category_high_card'. It now has 2 unique values.
+[2025-08-13 16:57:19] DEBUG: Applying smalls grouping to binned column 'category_moderate_binned' for feature 'category_moderate'.
+[2025-08-13 16:57:19] DEBUG: Feature 'category_moderate': Frequency table for binned column created with 1500 unique categories.
+[2025-08-13 16:57:19] DEBUG: Feature 'category_moderate': Identified 0 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-13 16:57:19] INFO: No categories (excluding 'NULL') in feature 'category_moderate' had volume less than 5.00%. No 'smalls' grouping applied for this feature.
+[2025-08-13 16:57:19] DEBUG: New column 'category_moderate_smalls' (with 'smalls' grouping) created in df_smalls for feature 'category_moderate'. It now has 10 unique values.
+[2025-08-13 16:57:19] DEBUG: Applying smalls grouping to binned column 'character_comments_binned' for feature 'character_comments'.
+[2025-08-13 16:57:19] DEBUG: Feature 'character_comments': Frequency table for binned column created with 1500 unique categories.
+[2025-08-13 16:57:19] DEBUG: Feature 'character_comments': Identified 0 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-13 16:57:19] INFO: No categories (excluding 'NULL') in feature 'character_comments' had volume less than 5.00%. No 'smalls' grouping applied for this feature.
+[2025-08-13 16:57:19] DEBUG: New column 'character_comments_smalls' (with 'smalls' grouping) created in df_smalls for feature 'character_comments'. It now has 4 unique values.
+[2025-08-13 16:57:19] DEBUG: Applying smalls grouping to binned column 'date_col_binned' for feature 'date_col'.
+[2025-08-13 16:57:19] DEBUG: Feature 'date_col': Frequency table for binned column created with 1500 unique categories.
+[2025-08-13 16:57:19] DEBUG: Feature 'date_col': Identified 39 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-13 16:57:19] INFO: Grouped 39 unique categories into 'smalls' for feature 'date_col'. These categories had volume less than 5.00% (75 rows).
+[2025-08-13 16:57:19] DEBUG: New column 'date_col_smalls' (with 'smalls' grouping) created in df_smalls for feature 'date_col'. It now has 17 unique values.
+[2025-08-13 16:57:19] DEBUG: Applying smalls grouping to binned column 'datetime_col_binned' for feature 'datetime_col'.
+[2025-08-13 16:57:19] DEBUG: Feature 'datetime_col': Frequency table for binned column created with 1500 unique categories.
+[2025-08-13 16:57:19] DEBUG: Feature 'datetime_col': Identified 0 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-13 16:57:19] INFO: No categories (excluding 'NULL') in feature 'datetime_col' had volume less than 5.00%. No 'smalls' grouping applied for this feature.
+[2025-08-13 16:57:19] DEBUG: New column 'datetime_col_smalls' (with 'smalls' grouping) created in df_smalls for feature 'datetime_col'. It now has 11 unique values.
+[2025-08-13 16:57:19] DEBUG: Applying smalls grouping to binned column 'days_since_datetime_col_binned' for feature 'days_since_datetime_col'.
+[2025-08-13 16:57:19] DEBUG: Feature 'days_since_datetime_col': Frequency table for binned column created with 1500 unique categories.
+[2025-08-13 16:57:19] DEBUG: Feature 'days_since_datetime_col': Identified 0 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-13 16:57:19] INFO: No categories (excluding 'NULL') in feature 'days_since_datetime_col' had volume less than 5.00%. No 'smalls' grouping applied for this feature.
+[2025-08-13 16:57:19] DEBUG: New column 'days_since_datetime_col_smalls' (with 'smalls' grouping) created in df_smalls for feature 'days_since_datetime_col'. It now has 11 unique values.
+[2025-08-13 16:57:19] DEBUG: Applying smalls grouping to binned column 'integer_rating_binned' for feature 'integer_rating'.
+[2025-08-13 16:57:19] DEBUG: Feature 'integer_rating': Frequency table for binned column created with 1500 unique categories.
+[2025-08-13 16:57:19] DEBUG: Feature 'integer_rating': Identified 0 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-13 16:57:19] INFO: No categories (excluding 'NULL') in feature 'integer_rating' had volume less than 5.00%. No 'smalls' grouping applied for this feature.
+[2025-08-13 16:57:19] DEBUG: New column 'integer_rating_smalls' (with 'smalls' grouping) created in df_smalls for feature 'integer_rating'. It now has 6 unique values.
+[2025-08-13 16:57:19] DEBUG: Applying smalls grouping to binned column 'logical_flag_binned' for feature 'logical_flag'.
+[2025-08-13 16:57:19] DEBUG: Feature 'logical_flag': Frequency table for binned column created with 1500 unique categories.
+[2025-08-13 16:57:19] DEBUG: Feature 'logical_flag': Identified 0 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-13 16:57:19] INFO: No categories (excluding 'NULL') in feature 'logical_flag' had volume less than 5.00%. No 'smalls' grouping applied for this feature.
+[2025-08-13 16:57:19] DEBUG: New column 'logical_flag_smalls' (with 'smalls' grouping) created in df_smalls for feature 'logical_flag'. It now has 2 unique values.
+[2025-08-13 16:57:19] DEBUG: Applying smalls grouping to binned column 'mixed_nulls_text_binned' for feature 'mixed_nulls_text'.
+[2025-08-13 16:57:19] DEBUG: Feature 'mixed_nulls_text': Frequency table for binned column created with 1500 unique categories.
+[2025-08-13 16:57:19] DEBUG: Feature 'mixed_nulls_text': Identified 0 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-13 16:57:19] INFO: No categories (excluding 'NULL') in feature 'mixed_nulls_text' had volume less than 5.00%. No 'smalls' grouping applied for this feature.
+[2025-08-13 16:57:19] DEBUG: New column 'mixed_nulls_text_smalls' (with 'smalls' grouping) created in df_smalls for feature 'mixed_nulls_text'. It now has 3 unique values.
+[2025-08-13 16:57:19] DEBUG: Applying smalls grouping to binned column 'numeric_target_binned' for feature 'numeric_target'.
+[2025-08-13 16:57:19] DEBUG: Feature 'numeric_target': Frequency table for binned column created with 1500 unique categories.
+[2025-08-13 16:57:19] DEBUG: Feature 'numeric_target': Identified 1500 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-13 16:57:19] INFO: Grouped 1500 unique categories into 'smalls' for feature 'numeric_target'. These categories had volume less than 5.00% (75 rows).
+[2025-08-13 16:57:19] DEBUG: New column 'numeric_target_smalls' (with 'smalls' grouping) created in df_smalls for feature 'numeric_target'. It now has 1 unique values.
+[2025-08-13 16:57:19] DEBUG: Applying smalls grouping to binned column 'numeric_with_na_binned' for feature 'numeric_with_na'.
+[2025-08-13 16:57:19] DEBUG: Feature 'numeric_with_na': Frequency table for binned column created with 1500 unique categories.
+[2025-08-13 16:57:19] DEBUG: Feature 'numeric_with_na': Identified 748 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-13 16:57:19] INFO: Grouped 748 unique categories into 'smalls' for feature 'numeric_with_na'. These categories had volume less than 5.00% (75 rows).
+[2025-08-13 16:57:19] DEBUG: New column 'numeric_with_na_smalls' (with 'smalls' grouping) created in df_smalls for feature 'numeric_with_na'. It now has 11 unique values.
+[2025-08-13 16:57:19] DEBUG: Applying smalls grouping to binned column 'primary_key_binned' for feature 'primary_key'.
+[2025-08-13 16:57:19] DEBUG: Feature 'primary_key': Frequency table for binned column created with 1500 unique categories.
+[2025-08-13 16:57:19] DEBUG: Feature 'primary_key': Identified 1500 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-13 16:57:19] INFO: Grouped 1500 unique categories into 'smalls' for feature 'primary_key'. These categories had volume less than 5.00% (75 rows).
+[2025-08-13 16:57:19] DEBUG: New column 'primary_key_smalls' (with 'smalls' grouping) created in df_smalls for feature 'primary_key'. It now has 1 unique values.
+[2025-08-13 16:57:19] INFO: Exiting 'create_smalls_dataframe'. 'Smalls' grouped dataframe prepared.
+[2025-08-13 16:57:19] INFO: Created df_smalls with 1500 rows and 37 columns, ready for visualization.
+[2025-08-13 16:57:19] DEBUG: [PHASE 6 END] Global log_file_conn status: is.null: FALSE, isOpen: TRUE.
+[2025-08-13 16:57:19] DEBUG: [PHASE 7 START] Global log_file_conn status: is.null: FALSE, isOpen: TRUE.
+[2025-08-13 16:57:19] INFO: Initiating output file generation: CSV summary and HTML report (if enabled).
+[2025-08-13 16:57:19] INFO: Feature summary data successfully saved to CSV file: 'report_outputs/feature_summary.csv'.
+[2025-08-13 16:57:19] INFO: Proceeding with interactive HTML report generation as 'generate_plots' is TRUE.
+[2025-08-13 16:57:19] INFO: Entering function 'generate_html_report'. Beginning construction of the interactive HTML report to: 'report_outputs/feature_report.html'.
+[2025-08-13 16:57:19] INFO: Generating HTML tabs for 12 features that are available for plotting after exclusions.
+[2025-08-13 16:57:19] DEBUG: [generate_html_report] Processing HTML content for feature: 'category_high_card' (Assigned Main Tab ID: 06c856d8-f763-4783-bc3f-6dbf2d4a6bad).
+[2025-08-13 16:57:19] INFO: Entering function 'generate_feature_visualizations' for feature: 'category_high_card' (Original Type: character).
+[2025-08-13 16:57:19] DEBUG: Confirmed presence of 'category_high_card_smalls' in df_smalls for feature 'category_high_card'. Proceeding with visualizations.
+[2025-08-13 16:57:19] INFO: Generating histogram for feature 'category_high_card' using the 'category_high_card_smalls' column.
+[2025-08-13 16:57:19] DEBUG: Histogram generated for 'category_high_card' using 'category_high_card_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:19] INFO: Generating pie chart for feature 'category_high_card' using the 'category_high_card_smalls' column.
+[2025-08-13 16:57:19] DEBUG: Pie chart generated for 'category_high_card' using 'category_high_card_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:19] INFO: Preparing detailed frequency/summary table for feature 'category_high_card'.
+[2025-08-13 16:57:19] DEBUG: Frequency details for 'category_high_card' (character/logical) showing top 15 categories and an 'others' category.
+[2025-08-13 16:57:19] DEBUG: Frequency details table generated for 'category_high_card' (character/logical, using binned data).
+[2025-08-13 16:57:19] INFO: Preparing stability plot for feature 'category_high_card'. Checking date column availability.
+[2025-08-13 16:57:19] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'category_high_card_smalls'.
+[2025-08-13 16:57:19] DEBUG: Filtered stability data for 'category_high_card_smalls': 1500 rows after removing NAs in date and feature columns.
+[2025-08-13 16:57:19] DEBUG: Date column 'date_col' in stability data confirmed/converted to Date type.
+[2025-08-13 16:57:19] INFO: Generating volume stability plot for feature 'category_high_card_smalls'.
+[2025-08-13 16:57:19] DEBUG: Volume stability plot successfully generated for 'category_high_card_smalls'.
+[2025-08-13 16:57:19] INFO: Target column 'numeric_target' provided. Generating mean target and rank stability plots.
+[2025-08-13 16:57:19] INFO: Generating mean target stability plot for 'category_high_card_smalls'.
+[2025-08-13 16:57:19] DEBUG: Mean target stability plot successfully generated for 'category_high_card_smalls'.
+[2025-08-13 16:57:19] INFO: Generating rank stability plot for 'category_high_card_smalls'.
+[2025-08-13 16:57:20] DEBUG: Rank stability plot successfully generated for 'category_high_card_smalls'.
+[2025-08-13 16:57:20] INFO: Combined volume, mean CR, and rank stability plots generated for 'category_high_card_smalls'.
+[2025-08-13 16:57:20] INFO: Preparing specific plot for feature 'category_high_card' based on its data type ('character').
+[2025-08-13 16:57:20] DEBUG: Mosaic Plot generated for 'category_high_card' using 'category_high_card_smalls' column. Embedded as Base64 image.
+[2025-08-13 16:57:20] INFO: Exiting function 'generate_feature_visualizations' for feature: 'category_high_card'. All visuals assembled.
+[2025-08-13 16:57:20] DEBUG: All visualization elements prepared for feature 'category_high_card'.
+[2025-08-13 16:57:20] DEBUG: Defined 6 sub-tabs for feature 'category_high_card'.
+[2025-08-13 16:57:20] DEBUG: Sub-tab navigation links created for feature 'category_high_card'.
+[2025-08-13 16:57:20] DEBUG: Sub-tab content containers created for feature 'category_high_card'.
+[2025-08-13 16:57:20] DEBUG: Main tab panel assembled for feature 'category_high_card'.
+[2025-08-13 16:57:20] DEBUG: [generate_html_report] Processing HTML content for feature: 'category_moderate' (Assigned Main Tab ID: 624a3149-b95e-4f2c-a663-869a31f32901).
+[2025-08-13 16:57:20] INFO: Entering function 'generate_feature_visualizations' for feature: 'category_moderate' (Original Type: character).
+[2025-08-13 16:57:20] DEBUG: Confirmed presence of 'category_moderate_smalls' in df_smalls for feature 'category_moderate'. Proceeding with visualizations.
+[2025-08-13 16:57:20] INFO: Generating histogram for feature 'category_moderate' using the 'category_moderate_smalls' column.
+[2025-08-13 16:57:20] DEBUG: Histogram generated for 'category_moderate' using 'category_moderate_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:20] INFO: Generating pie chart for feature 'category_moderate' using the 'category_moderate_smalls' column.
+[2025-08-13 16:57:20] DEBUG: Pie chart generated for 'category_moderate' using 'category_moderate_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:20] INFO: Preparing detailed frequency/summary table for feature 'category_moderate'.
+[2025-08-13 16:57:20] DEBUG: Frequency details for 'category_moderate' (character/logical) showing all 10 categories.
+[2025-08-13 16:57:20] DEBUG: Frequency details table generated for 'category_moderate' (character/logical, using binned data).
+[2025-08-13 16:57:20] INFO: Preparing stability plot for feature 'category_moderate'. Checking date column availability.
+[2025-08-13 16:57:20] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'category_moderate_smalls'.
+[2025-08-13 16:57:20] DEBUG: Filtered stability data for 'category_moderate_smalls': 1500 rows after removing NAs in date and feature columns.
+[2025-08-13 16:57:20] DEBUG: Date column 'date_col' in stability data confirmed/converted to Date type.
+[2025-08-13 16:57:20] INFO: Generating volume stability plot for feature 'category_moderate_smalls'.
+[2025-08-13 16:57:20] DEBUG: Volume stability plot successfully generated for 'category_moderate_smalls'.
+[2025-08-13 16:57:20] INFO: Target column 'numeric_target' provided. Generating mean target and rank stability plots.
+[2025-08-13 16:57:20] INFO: Generating mean target stability plot for 'category_moderate_smalls'.
+[2025-08-13 16:57:20] DEBUG: Mean target stability plot successfully generated for 'category_moderate_smalls'.
+[2025-08-13 16:57:20] INFO: Generating rank stability plot for 'category_moderate_smalls'.
+[2025-08-13 16:57:20] DEBUG: Rank stability plot successfully generated for 'category_moderate_smalls'.
+[2025-08-13 16:57:21] INFO: Combined volume, mean CR, and rank stability plots generated for 'category_moderate_smalls'.
+[2025-08-13 16:57:21] INFO: Preparing specific plot for feature 'category_moderate' based on its data type ('character').
+[2025-08-13 16:57:21] DEBUG: Mosaic Plot generated for 'category_moderate' using 'category_moderate_smalls' column. Embedded as Base64 image.
+[2025-08-13 16:57:21] INFO: Exiting function 'generate_feature_visualizations' for feature: 'category_moderate'. All visuals assembled.
+[2025-08-13 16:57:21] DEBUG: All visualization elements prepared for feature 'category_moderate'.
+[2025-08-13 16:57:21] DEBUG: Defined 6 sub-tabs for feature 'category_moderate'.
+[2025-08-13 16:57:21] DEBUG: Sub-tab navigation links created for feature 'category_moderate'.
+[2025-08-13 16:57:21] DEBUG: Sub-tab content containers created for feature 'category_moderate'.
+[2025-08-13 16:57:21] DEBUG: Main tab panel assembled for feature 'category_moderate'.
+[2025-08-13 16:57:21] DEBUG: [generate_html_report] Processing HTML content for feature: 'character_comments' (Assigned Main Tab ID: e50bec37-bf02-45ac-9a57-f42a0ffee7ad).
+[2025-08-13 16:57:21] INFO: Entering function 'generate_feature_visualizations' for feature: 'character_comments' (Original Type: character).
+[2025-08-13 16:57:21] DEBUG: Confirmed presence of 'character_comments_smalls' in df_smalls for feature 'character_comments'. Proceeding with visualizations.
+[2025-08-13 16:57:21] INFO: Generating histogram for feature 'character_comments' using the 'character_comments_smalls' column.
+[2025-08-13 16:57:21] DEBUG: Histogram generated for 'character_comments' using 'character_comments_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:21] INFO: Generating pie chart for feature 'character_comments' using the 'character_comments_smalls' column.
+[2025-08-13 16:57:21] DEBUG: Pie chart generated for 'character_comments' using 'character_comments_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:21] INFO: Preparing detailed frequency/summary table for feature 'character_comments'.
+[2025-08-13 16:57:21] DEBUG: Frequency details for 'character_comments' (character/logical) showing all 3 categories.
+[2025-08-13 16:57:21] DEBUG: Frequency details table generated for 'character_comments' (character/logical, using binned data).
+[2025-08-13 16:57:21] INFO: Preparing stability plot for feature 'character_comments'. Checking date column availability.
+[2025-08-13 16:57:21] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'character_comments_smalls'.
+[2025-08-13 16:57:21] DEBUG: Filtered stability data for 'character_comments_smalls': 1500 rows after removing NAs in date and feature columns.
+[2025-08-13 16:57:21] DEBUG: Date column 'date_col' in stability data confirmed/converted to Date type.
+[2025-08-13 16:57:21] INFO: Generating volume stability plot for feature 'character_comments_smalls'.
+[2025-08-13 16:57:21] DEBUG: Volume stability plot successfully generated for 'character_comments_smalls'.
+[2025-08-13 16:57:21] INFO: Target column 'numeric_target' provided. Generating mean target and rank stability plots.
+[2025-08-13 16:57:21] INFO: Generating mean target stability plot for 'character_comments_smalls'.
+[2025-08-13 16:57:21] DEBUG: Mean target stability plot successfully generated for 'character_comments_smalls'.
+[2025-08-13 16:57:21] INFO: Generating rank stability plot for 'character_comments_smalls'.
+[2025-08-13 16:57:21] DEBUG: Rank stability plot successfully generated for 'character_comments_smalls'.
+[2025-08-13 16:57:21] INFO: Combined volume, mean CR, and rank stability plots generated for 'character_comments_smalls'.
+[2025-08-13 16:57:21] INFO: Preparing specific plot for feature 'character_comments' based on its data type ('character').
+[2025-08-13 16:57:21] DEBUG: Mosaic Plot generated for 'character_comments' using 'character_comments_smalls' column. Embedded as Base64 image.
+[2025-08-13 16:57:21] INFO: Exiting function 'generate_feature_visualizations' for feature: 'character_comments'. All visuals assembled.
+[2025-08-13 16:57:21] DEBUG: All visualization elements prepared for feature 'character_comments'.
+[2025-08-13 16:57:21] DEBUG: Defined 6 sub-tabs for feature 'character_comments'.
+[2025-08-13 16:57:21] DEBUG: Sub-tab navigation links created for feature 'character_comments'.
+[2025-08-13 16:57:21] DEBUG: Sub-tab content containers created for feature 'character_comments'.
+[2025-08-13 16:57:21] DEBUG: Main tab panel assembled for feature 'character_comments'.
+[2025-08-13 16:57:21] DEBUG: [generate_html_report] Processing HTML content for feature: 'date_col' (Assigned Main Tab ID: 24708cc0-07ff-4e0c-966a-d944d5b63c29).
+[2025-08-13 16:57:21] INFO: Entering function 'generate_feature_visualizations' for feature: 'date_col' (Original Type: date).
+[2025-08-13 16:57:21] DEBUG: Confirmed presence of 'date_col_smalls' in df_smalls for feature 'date_col'. Proceeding with visualizations.
+[2025-08-13 16:57:21] INFO: Generating histogram for feature 'date_col' using the 'date_col_smalls' column.
+[2025-08-13 16:57:22] DEBUG: Histogram generated for 'date_col' using 'date_col_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:22] INFO: Generating pie chart for feature 'date_col' using the 'date_col_smalls' column.
+[2025-08-13 16:57:22] DEBUG: Pie chart generated for 'date_col' using 'date_col_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:22] INFO: Preparing detailed frequency/summary table for feature 'date_col'.
+[2025-08-13 16:57:22] DEBUG: Frequency details for 'date_col' (date/POSIXct) showing top 15 binned categories and an 'others' category.
+[2025-08-13 16:57:22] DEBUG: Frequency details table generated for 'date_col' (date/POSIXct, using binned data).
+[2025-08-13 16:57:22] INFO: Preparing stability plot for feature 'date_col'. Checking date column availability.
+[2025-08-13 16:57:22] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'date_col_smalls'.
+[2025-08-13 16:57:22] DEBUG: Filtered stability data for 'date_col_smalls': 1500 rows after removing NAs in date and feature columns.
+[2025-08-13 16:57:22] DEBUG: Date column 'date_col' in stability data confirmed/converted to Date type.
+[2025-08-13 16:57:22] INFO: Generating volume stability plot for feature 'date_col_smalls'.
+[2025-08-13 16:57:22] DEBUG: Volume stability plot successfully generated for 'date_col_smalls'.
+[2025-08-13 16:57:22] INFO: Target column 'numeric_target' provided. Generating mean target and rank stability plots.
+[2025-08-13 16:57:22] INFO: Generating mean target stability plot for 'date_col_smalls'.
+[2025-08-13 16:57:22] DEBUG: Mean target stability plot successfully generated for 'date_col_smalls'.
+[2025-08-13 16:57:22] INFO: Generating rank stability plot for 'date_col_smalls'.
+[2025-08-13 16:57:22] DEBUG: Rank stability plot successfully generated for 'date_col_smalls'.
+[2025-08-13 16:57:23] INFO: Combined volume, mean CR, and rank stability plots generated for 'date_col_smalls'.
+[2025-08-13 16:57:23] INFO: Preparing specific plot for feature 'date_col' based on its data type ('date').
+[2025-08-13 16:57:23] DEBUG: Aggregated daily counts for calendar heatmap for 'date_col'. Total unique days: 1500.
+[2025-08-13 16:57:23] DEBUG: Calendar heatmap for 'date_col': Data spans from year 2023 to 2027.
+[2025-08-13 16:57:23] DEBUG: Calendar Heatmap generated for 'date_col' using original date data (excluding NULLs). Interactive plot prepared.
+[2025-08-13 16:57:23] INFO: Exiting function 'generate_feature_visualizations' for feature: 'date_col'. All visuals assembled.
+[2025-08-13 16:57:23] DEBUG: All visualization elements prepared for feature 'date_col'.
+[2025-08-13 16:57:23] DEBUG: Defined 6 sub-tabs for feature 'date_col'.
+[2025-08-13 16:57:23] DEBUG: Sub-tab navigation links created for feature 'date_col'.
+[2025-08-13 16:57:23] DEBUG: Sub-tab content containers created for feature 'date_col'.
+[2025-08-13 16:57:23] DEBUG: Main tab panel assembled for feature 'date_col'.
+[2025-08-13 16:57:23] DEBUG: [generate_html_report] Processing HTML content for feature: 'datetime_col' (Assigned Main Tab ID: 9bc0785b-bc44-4093-9476-a66b674fedae).
+[2025-08-13 16:57:23] INFO: Entering function 'generate_feature_visualizations' for feature: 'datetime_col' (Original Type: POSIXct).
+[2025-08-13 16:57:23] DEBUG: Confirmed presence of 'datetime_col_smalls' in df_smalls for feature 'datetime_col'. Proceeding with visualizations.
+[2025-08-13 16:57:23] INFO: Generating histogram for feature 'datetime_col' using the 'datetime_col_smalls' column.
+[2025-08-13 16:57:23] DEBUG: Histogram generated for 'datetime_col' using 'datetime_col_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:23] INFO: Generating pie chart for feature 'datetime_col' using the 'datetime_col_smalls' column.
+[2025-08-13 16:57:23] DEBUG: Pie chart generated for 'datetime_col' using 'datetime_col_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:23] INFO: Preparing detailed frequency/summary table for feature 'datetime_col'.
+[2025-08-13 16:57:23] DEBUG: Frequency details for 'datetime_col' (date/POSIXct) showing all 11 binned categories.
+[2025-08-13 16:57:23] DEBUG: Frequency details table generated for 'datetime_col' (date/POSIXct, using binned data).
+[2025-08-13 16:57:23] INFO: Preparing stability plot for feature 'datetime_col'. Checking date column availability.
+[2025-08-13 16:57:23] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'datetime_col_smalls'.
+[2025-08-13 16:57:23] DEBUG: Filtered stability data for 'datetime_col_smalls': 1500 rows after removing NAs in date and feature columns.
+[2025-08-13 16:57:23] DEBUG: Date column 'date_col' in stability data confirmed/converted to Date type.
+[2025-08-13 16:57:23] INFO: Generating volume stability plot for feature 'datetime_col_smalls'.
+[2025-08-13 16:57:24] DEBUG: Volume stability plot successfully generated for 'datetime_col_smalls'.
+[2025-08-13 16:57:24] INFO: Target column 'numeric_target' provided. Generating mean target and rank stability plots.
+[2025-08-13 16:57:24] INFO: Generating mean target stability plot for 'datetime_col_smalls'.
+[2025-08-13 16:57:24] DEBUG: Mean target stability plot successfully generated for 'datetime_col_smalls'.
+[2025-08-13 16:57:24] INFO: Generating rank stability plot for 'datetime_col_smalls'.
+[2025-08-13 16:57:24] DEBUG: Rank stability plot successfully generated for 'datetime_col_smalls'.
+[2025-08-13 16:57:24] INFO: Combined volume, mean CR, and rank stability plots generated for 'datetime_col_smalls'.
+[2025-08-13 16:57:24] INFO: Preparing specific plot for feature 'datetime_col' based on its data type ('POSIXct').
+[2025-08-13 16:57:24] DEBUG: Aggregated daily counts for calendar heatmap for 'datetime_col'. Total unique days: 11.
+[2025-08-13 16:57:24] DEBUG: Calendar heatmap for 'datetime_col': Data spans from year 2023 to 2023.
+[2025-08-13 16:57:24] DEBUG: Calendar Heatmap generated for 'datetime_col' using original date data (excluding NULLs). Interactive plot prepared.
+[2025-08-13 16:57:24] INFO: Exiting function 'generate_feature_visualizations' for feature: 'datetime_col'. All visuals assembled.
+[2025-08-13 16:57:24] DEBUG: All visualization elements prepared for feature 'datetime_col'.
+[2025-08-13 16:57:24] DEBUG: Defined 6 sub-tabs for feature 'datetime_col'.
+[2025-08-13 16:57:24] DEBUG: Sub-tab navigation links created for feature 'datetime_col'.
+[2025-08-13 16:57:24] DEBUG: Sub-tab content containers created for feature 'datetime_col'.
+[2025-08-13 16:57:24] DEBUG: Main tab panel assembled for feature 'datetime_col'.
+[2025-08-13 16:57:24] DEBUG: [generate_html_report] Processing HTML content for feature: 'days_since_datetime_col' (Assigned Main Tab ID: f074782e-701d-49d5-8987-87dcfca53481).
+[2025-08-13 16:57:24] INFO: Entering function 'generate_feature_visualizations' for feature: 'days_since_datetime_col' (Original Type: integer).
+[2025-08-13 16:57:24] DEBUG: Confirmed presence of 'days_since_datetime_col_smalls' in df_smalls for feature 'days_since_datetime_col'. Proceeding with visualizations.
+[2025-08-13 16:57:24] INFO: Generating histogram for feature 'days_since_datetime_col' using the 'days_since_datetime_col_smalls' column.
+[2025-08-13 16:57:24] DEBUG: Histogram generated for 'days_since_datetime_col' using 'days_since_datetime_col_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:24] INFO: Generating pie chart for feature 'days_since_datetime_col' using the 'days_since_datetime_col_smalls' column.
+[2025-08-13 16:57:24] DEBUG: Pie chart generated for 'days_since_datetime_col' using 'days_since_datetime_col_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:24] INFO: Preparing detailed frequency/summary table for feature 'days_since_datetime_col'.
+[2025-08-13 16:57:25] DEBUG: Descriptive statistics table generated for 'days_since_datetime_col' (numeric/integer) using original data.
+[2025-08-13 16:57:25] INFO: Preparing stability plot for feature 'days_since_datetime_col'. Checking date column availability.
+[2025-08-13 16:57:25] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'days_since_datetime_col_smalls'.
+[2025-08-13 16:57:25] DEBUG: Filtered stability data for 'days_since_datetime_col_smalls': 1500 rows after removing NAs in date and feature columns.
+[2025-08-13 16:57:25] DEBUG: Date column 'date_col' in stability data confirmed/converted to Date type.
+[2025-08-13 16:57:25] INFO: Generating volume stability plot for feature 'days_since_datetime_col_smalls'.
+[2025-08-13 16:57:25] DEBUG: Volume stability plot successfully generated for 'days_since_datetime_col_smalls'.
+[2025-08-13 16:57:25] INFO: Target column 'numeric_target' provided. Generating mean target and rank stability plots.
+[2025-08-13 16:57:25] INFO: Generating mean target stability plot for 'days_since_datetime_col_smalls'.
+[2025-08-13 16:57:25] DEBUG: Mean target stability plot successfully generated for 'days_since_datetime_col_smalls'.
+[2025-08-13 16:57:25] INFO: Generating rank stability plot for 'days_since_datetime_col_smalls'.
+[2025-08-13 16:57:25] DEBUG: Rank stability plot successfully generated for 'days_since_datetime_col_smalls'.
+[2025-08-13 16:57:25] INFO: Combined volume, mean CR, and rank stability plots generated for 'days_since_datetime_col_smalls'.
+[2025-08-13 16:57:25] INFO: Preparing specific plot for feature 'days_since_datetime_col' based on its data type ('integer').
+[2025-08-13 16:57:25] DEBUG: Density plot generated for 'days_since_datetime_col' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-13 16:57:25] INFO: Exiting function 'generate_feature_visualizations' for feature: 'days_since_datetime_col'. All visuals assembled.
+[2025-08-13 16:57:25] DEBUG: All visualization elements prepared for feature 'days_since_datetime_col'.
+[2025-08-13 16:57:25] DEBUG: Defined 6 sub-tabs for feature 'days_since_datetime_col'.
+[2025-08-13 16:57:25] DEBUG: Sub-tab navigation links created for feature 'days_since_datetime_col'.
+[2025-08-13 16:57:25] DEBUG: Sub-tab content containers created for feature 'days_since_datetime_col'.
+[2025-08-13 16:57:25] DEBUG: Main tab panel assembled for feature 'days_since_datetime_col'.
+[2025-08-13 16:57:25] DEBUG: [generate_html_report] Processing HTML content for feature: 'integer_rating' (Assigned Main Tab ID: 0eec5603-3e8a-4547-9f9b-f23dbb913242).
+[2025-08-13 16:57:25] INFO: Entering function 'generate_feature_visualizations' for feature: 'integer_rating' (Original Type: integer).
+[2025-08-13 16:57:25] DEBUG: Confirmed presence of 'integer_rating_smalls' in df_smalls for feature 'integer_rating'. Proceeding with visualizations.
+[2025-08-13 16:57:25] INFO: Generating histogram for feature 'integer_rating' using the 'integer_rating_smalls' column.
+[2025-08-13 16:57:25] DEBUG: Histogram generated for 'integer_rating' using 'integer_rating_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:25] INFO: Generating pie chart for feature 'integer_rating' using the 'integer_rating_smalls' column.
+[2025-08-13 16:57:25] DEBUG: Pie chart generated for 'integer_rating' using 'integer_rating_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:25] INFO: Preparing detailed frequency/summary table for feature 'integer_rating'.
+[2025-08-13 16:57:25] DEBUG: Descriptive statistics table generated for 'integer_rating' (numeric/integer) using original data.
+[2025-08-13 16:57:25] INFO: Preparing stability plot for feature 'integer_rating'. Checking date column availability.
+[2025-08-13 16:57:25] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'integer_rating_smalls'.
+[2025-08-13 16:57:25] DEBUG: Filtered stability data for 'integer_rating_smalls': 1500 rows after removing NAs in date and feature columns.
+[2025-08-13 16:57:25] DEBUG: Date column 'date_col' in stability data confirmed/converted to Date type.
+[2025-08-13 16:57:25] INFO: Generating volume stability plot for feature 'integer_rating_smalls'.
+[2025-08-13 16:57:26] DEBUG: Volume stability plot successfully generated for 'integer_rating_smalls'.
+[2025-08-13 16:57:26] INFO: Target column 'numeric_target' provided. Generating mean target and rank stability plots.
+[2025-08-13 16:57:26] INFO: Generating mean target stability plot for 'integer_rating_smalls'.
+[2025-08-13 16:57:26] DEBUG: Mean target stability plot successfully generated for 'integer_rating_smalls'.
+[2025-08-13 16:57:26] INFO: Generating rank stability plot for 'integer_rating_smalls'.
+[2025-08-13 16:57:26] DEBUG: Rank stability plot successfully generated for 'integer_rating_smalls'.
+[2025-08-13 16:57:26] INFO: Combined volume, mean CR, and rank stability plots generated for 'integer_rating_smalls'.
+[2025-08-13 16:57:26] INFO: Preparing specific plot for feature 'integer_rating' based on its data type ('integer').
+[2025-08-13 16:57:26] DEBUG: Density plot generated for 'integer_rating' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-13 16:57:26] INFO: Exiting function 'generate_feature_visualizations' for feature: 'integer_rating'. All visuals assembled.
+[2025-08-13 16:57:26] DEBUG: All visualization elements prepared for feature 'integer_rating'.
+[2025-08-13 16:57:26] DEBUG: Defined 6 sub-tabs for feature 'integer_rating'.
+[2025-08-13 16:57:26] DEBUG: Sub-tab navigation links created for feature 'integer_rating'.
+[2025-08-13 16:57:26] DEBUG: Sub-tab content containers created for feature 'integer_rating'.
+[2025-08-13 16:57:26] DEBUG: Main tab panel assembled for feature 'integer_rating'.
+[2025-08-13 16:57:26] DEBUG: [generate_html_report] Processing HTML content for feature: 'logical_flag' (Assigned Main Tab ID: 8741d56c-dfdc-480e-b77e-6cc54181cf32).
+[2025-08-13 16:57:26] INFO: Entering function 'generate_feature_visualizations' for feature: 'logical_flag' (Original Type: logical).
+[2025-08-13 16:57:26] DEBUG: Confirmed presence of 'logical_flag_smalls' in df_smalls for feature 'logical_flag'. Proceeding with visualizations.
+[2025-08-13 16:57:26] INFO: Generating histogram for feature 'logical_flag' using the 'logical_flag_smalls' column.
+[2025-08-13 16:57:26] DEBUG: Histogram generated for 'logical_flag' using 'logical_flag_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:26] INFO: Generating pie chart for feature 'logical_flag' using the 'logical_flag_smalls' column.
+[2025-08-13 16:57:26] DEBUG: Pie chart generated for 'logical_flag' using 'logical_flag_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:26] INFO: Preparing detailed frequency/summary table for feature 'logical_flag'.
+[2025-08-13 16:57:26] DEBUG: Frequency details for 'logical_flag' (character/logical) showing all 2 categories.
+[2025-08-13 16:57:26] DEBUG: Frequency details table generated for 'logical_flag' (character/logical, using binned data).
+[2025-08-13 16:57:26] INFO: Preparing stability plot for feature 'logical_flag'. Checking date column availability.
+[2025-08-13 16:57:26] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'logical_flag_smalls'.
+[2025-08-13 16:57:26] DEBUG: Filtered stability data for 'logical_flag_smalls': 1500 rows after removing NAs in date and feature columns.
+[2025-08-13 16:57:26] DEBUG: Date column 'date_col' in stability data confirmed/converted to Date type.
+[2025-08-13 16:57:26] INFO: Generating volume stability plot for feature 'logical_flag_smalls'.
+[2025-08-13 16:57:27] DEBUG: Volume stability plot successfully generated for 'logical_flag_smalls'.
+[2025-08-13 16:57:27] INFO: Target column 'numeric_target' provided. Generating mean target and rank stability plots.
+[2025-08-13 16:57:27] INFO: Generating mean target stability plot for 'logical_flag_smalls'.
+[2025-08-13 16:57:27] DEBUG: Mean target stability plot successfully generated for 'logical_flag_smalls'.
+[2025-08-13 16:57:27] INFO: Generating rank stability plot for 'logical_flag_smalls'.
+[2025-08-13 16:57:27] DEBUG: Rank stability plot successfully generated for 'logical_flag_smalls'.
+[2025-08-13 16:57:27] INFO: Combined volume, mean CR, and rank stability plots generated for 'logical_flag_smalls'.
+[2025-08-13 16:57:27] INFO: Preparing specific plot for feature 'logical_flag' based on its data type ('logical').
+[2025-08-13 16:57:27] DEBUG: Mosaic Plot generated for 'logical_flag' using 'logical_flag_smalls' column. Embedded as Base64 image.
+[2025-08-13 16:57:27] INFO: Exiting function 'generate_feature_visualizations' for feature: 'logical_flag'. All visuals assembled.
+[2025-08-13 16:57:27] DEBUG: All visualization elements prepared for feature 'logical_flag'.
+[2025-08-13 16:57:27] DEBUG: Defined 6 sub-tabs for feature 'logical_flag'.
+[2025-08-13 16:57:27] DEBUG: Sub-tab navigation links created for feature 'logical_flag'.
+[2025-08-13 16:57:27] DEBUG: Sub-tab content containers created for feature 'logical_flag'.
+[2025-08-13 16:57:27] DEBUG: Main tab panel assembled for feature 'logical_flag'.
+[2025-08-13 16:57:27] DEBUG: [generate_html_report] Processing HTML content for feature: 'mixed_nulls_text' (Assigned Main Tab ID: 927c83b1-d08b-4d98-a87f-e0f447b0b068).
+[2025-08-13 16:57:27] INFO: Entering function 'generate_feature_visualizations' for feature: 'mixed_nulls_text' (Original Type: character-logical).
+[2025-08-13 16:57:27] DEBUG: Confirmed presence of 'mixed_nulls_text_smalls' in df_smalls for feature 'mixed_nulls_text'. Proceeding with visualizations.
+[2025-08-13 16:57:27] INFO: Generating histogram for feature 'mixed_nulls_text' using the 'mixed_nulls_text_smalls' column.
+[2025-08-13 16:57:27] DEBUG: Histogram generated for 'mixed_nulls_text' using 'mixed_nulls_text_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:27] INFO: Generating pie chart for feature 'mixed_nulls_text' using the 'mixed_nulls_text_smalls' column.
+[2025-08-13 16:57:27] DEBUG: Pie chart generated for 'mixed_nulls_text' using 'mixed_nulls_text_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:27] INFO: Preparing detailed frequency/summary table for feature 'mixed_nulls_text'.
+[2025-08-13 16:57:27] DEBUG: Frequency details for 'mixed_nulls_text' (character/logical) showing all 2 categories.
+[2025-08-13 16:57:27] DEBUG: Frequency details table generated for 'mixed_nulls_text' (character/logical, using binned data).
+[2025-08-13 16:57:27] INFO: Preparing stability plot for feature 'mixed_nulls_text'. Checking date column availability.
+[2025-08-13 16:57:27] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'mixed_nulls_text_smalls'.
+[2025-08-13 16:57:27] DEBUG: Filtered stability data for 'mixed_nulls_text_smalls': 1500 rows after removing NAs in date and feature columns.
+[2025-08-13 16:57:27] DEBUG: Date column 'date_col' in stability data confirmed/converted to Date type.
+[2025-08-13 16:57:27] INFO: Generating volume stability plot for feature 'mixed_nulls_text_smalls'.
+[2025-08-13 16:57:28] DEBUG: Volume stability plot successfully generated for 'mixed_nulls_text_smalls'.
+[2025-08-13 16:57:28] INFO: Target column 'numeric_target' provided. Generating mean target and rank stability plots.
+[2025-08-13 16:57:28] INFO: Generating mean target stability plot for 'mixed_nulls_text_smalls'.
+[2025-08-13 16:57:28] DEBUG: Mean target stability plot successfully generated for 'mixed_nulls_text_smalls'.
+[2025-08-13 16:57:28] INFO: Generating rank stability plot for 'mixed_nulls_text_smalls'.
+[2025-08-13 16:57:28] DEBUG: Rank stability plot successfully generated for 'mixed_nulls_text_smalls'.
+[2025-08-13 16:57:28] INFO: Combined volume, mean CR, and rank stability plots generated for 'mixed_nulls_text_smalls'.
+[2025-08-13 16:57:28] INFO: Preparing specific plot for feature 'mixed_nulls_text' based on its data type ('character-logical').
+[2025-08-13 16:57:28] DEBUG: Mosaic Plot generated for 'mixed_nulls_text' using 'mixed_nulls_text_smalls' column. Embedded as Base64 image.
+[2025-08-13 16:57:28] INFO: Exiting function 'generate_feature_visualizations' for feature: 'mixed_nulls_text'. All visuals assembled.
+[2025-08-13 16:57:28] DEBUG: All visualization elements prepared for feature 'mixed_nulls_text'.
+[2025-08-13 16:57:28] DEBUG: Defined 6 sub-tabs for feature 'mixed_nulls_text'.
+[2025-08-13 16:57:28] DEBUG: Sub-tab navigation links created for feature 'mixed_nulls_text'.
+[2025-08-13 16:57:28] DEBUG: Sub-tab content containers created for feature 'mixed_nulls_text'.
+[2025-08-13 16:57:28] DEBUG: Main tab panel assembled for feature 'mixed_nulls_text'.
+[2025-08-13 16:57:28] DEBUG: [generate_html_report] Processing HTML content for feature: 'numeric_target' (Assigned Main Tab ID: 7229008a-8290-4133-a045-408d688723aa).
+[2025-08-13 16:57:28] INFO: Entering function 'generate_feature_visualizations' for feature: 'numeric_target' (Original Type: numeric).
+[2025-08-13 16:57:28] DEBUG: Confirmed presence of 'numeric_target_smalls' in df_smalls for feature 'numeric_target'. Proceeding with visualizations.
+[2025-08-13 16:57:28] INFO: Generating histogram for feature 'numeric_target' using the 'numeric_target_smalls' column.
+[2025-08-13 16:57:28] DEBUG: Histogram generated for 'numeric_target' using 'numeric_target_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:28] INFO: Generating pie chart for feature 'numeric_target' using the 'numeric_target_smalls' column.
+[2025-08-13 16:57:28] DEBUG: Pie chart generated for 'numeric_target' using 'numeric_target_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:28] INFO: Preparing detailed frequency/summary table for feature 'numeric_target'.
+[2025-08-13 16:57:28] DEBUG: Descriptive statistics table generated for 'numeric_target' (numeric/integer) using original data.
+[2025-08-13 16:57:28] INFO: Preparing stability plot for feature 'numeric_target'. Checking date column availability.
+[2025-08-13 16:57:28] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'numeric_target_smalls'.
+[2025-08-13 16:57:28] DEBUG: Filtered stability data for 'numeric_target_smalls': 1500 rows after removing NAs in date and feature columns.
+[2025-08-13 16:57:28] DEBUG: Date column 'date_col' in stability data confirmed/converted to Date type.
+[2025-08-13 16:57:28] INFO: Generating volume stability plot for feature 'numeric_target_smalls'.
+[2025-08-13 16:57:29] DEBUG: Volume stability plot successfully generated for 'numeric_target_smalls'.
+[2025-08-13 16:57:29] INFO: Target column 'numeric_target' provided. Generating mean target and rank stability plots.
+[2025-08-13 16:57:29] INFO: Generating mean target stability plot for 'numeric_target_smalls'.
+[2025-08-13 16:57:29] DEBUG: Mean target stability plot successfully generated for 'numeric_target_smalls'.
+[2025-08-13 16:57:29] INFO: Generating rank stability plot for 'numeric_target_smalls'.
+[2025-08-13 16:57:29] DEBUG: Rank stability plot successfully generated for 'numeric_target_smalls'.
+[2025-08-13 16:57:29] INFO: Combined volume, mean CR, and rank stability plots generated for 'numeric_target_smalls'.
+[2025-08-13 16:57:29] INFO: Preparing specific plot for feature 'numeric_target' based on its data type ('numeric').
+[2025-08-13 16:57:29] DEBUG: Density plot generated for 'numeric_target' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-13 16:57:29] INFO: Exiting function 'generate_feature_visualizations' for feature: 'numeric_target'. All visuals assembled.
+[2025-08-13 16:57:29] DEBUG: All visualization elements prepared for feature 'numeric_target'.
+[2025-08-13 16:57:29] DEBUG: Defined 6 sub-tabs for feature 'numeric_target'.
+[2025-08-13 16:57:29] DEBUG: Sub-tab navigation links created for feature 'numeric_target'.
+[2025-08-13 16:57:29] DEBUG: Sub-tab content containers created for feature 'numeric_target'.
+[2025-08-13 16:57:29] DEBUG: Main tab panel assembled for feature 'numeric_target'.
+[2025-08-13 16:57:29] DEBUG: [generate_html_report] Processing HTML content for feature: 'numeric_with_na' (Assigned Main Tab ID: 84d2c6f6-9844-4e9a-9983-6ffdc9cbc992).
+[2025-08-13 16:57:29] INFO: Entering function 'generate_feature_visualizations' for feature: 'numeric_with_na' (Original Type: numeric).
+[2025-08-13 16:57:29] DEBUG: Confirmed presence of 'numeric_with_na_smalls' in df_smalls for feature 'numeric_with_na'. Proceeding with visualizations.
+[2025-08-13 16:57:29] INFO: Generating histogram for feature 'numeric_with_na' using the 'numeric_with_na_smalls' column.
+[2025-08-13 16:57:29] DEBUG: Histogram generated for 'numeric_with_na' using 'numeric_with_na_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:29] INFO: Generating pie chart for feature 'numeric_with_na' using the 'numeric_with_na_smalls' column.
+[2025-08-13 16:57:29] DEBUG: Pie chart generated for 'numeric_with_na' using 'numeric_with_na_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:29] INFO: Preparing detailed frequency/summary table for feature 'numeric_with_na'.
+[2025-08-13 16:57:29] DEBUG: Descriptive statistics table generated for 'numeric_with_na' (numeric/integer) using original data.
+[2025-08-13 16:57:29] INFO: Preparing stability plot for feature 'numeric_with_na'. Checking date column availability.
+[2025-08-13 16:57:29] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'numeric_with_na_smalls'.
+[2025-08-13 16:57:29] DEBUG: Filtered stability data for 'numeric_with_na_smalls': 1500 rows after removing NAs in date and feature columns.
+[2025-08-13 16:57:29] DEBUG: Date column 'date_col' in stability data confirmed/converted to Date type.
+[2025-08-13 16:57:29] INFO: Generating volume stability plot for feature 'numeric_with_na_smalls'.
+[2025-08-13 16:57:30] DEBUG: Volume stability plot successfully generated for 'numeric_with_na_smalls'.
+[2025-08-13 16:57:30] INFO: Target column 'numeric_target' provided. Generating mean target and rank stability plots.
+[2025-08-13 16:57:30] INFO: Generating mean target stability plot for 'numeric_with_na_smalls'.
+[2025-08-13 16:57:30] DEBUG: Mean target stability plot successfully generated for 'numeric_with_na_smalls'.
+[2025-08-13 16:57:30] INFO: Generating rank stability plot for 'numeric_with_na_smalls'.
+[2025-08-13 16:57:30] DEBUG: Rank stability plot successfully generated for 'numeric_with_na_smalls'.
+[2025-08-13 16:57:30] INFO: Combined volume, mean CR, and rank stability plots generated for 'numeric_with_na_smalls'.
+[2025-08-13 16:57:30] INFO: Preparing specific plot for feature 'numeric_with_na' based on its data type ('numeric').
+[2025-08-13 16:57:30] DEBUG: Density plot generated for 'numeric_with_na' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-13 16:57:30] INFO: Exiting function 'generate_feature_visualizations' for feature: 'numeric_with_na'. All visuals assembled.
+[2025-08-13 16:57:30] DEBUG: All visualization elements prepared for feature 'numeric_with_na'.
+[2025-08-13 16:57:30] DEBUG: Defined 6 sub-tabs for feature 'numeric_with_na'.
+[2025-08-13 16:57:30] DEBUG: Sub-tab navigation links created for feature 'numeric_with_na'.
+[2025-08-13 16:57:30] DEBUG: Sub-tab content containers created for feature 'numeric_with_na'.
+[2025-08-13 16:57:30] DEBUG: Main tab panel assembled for feature 'numeric_with_na'.
+[2025-08-13 16:57:30] DEBUG: [generate_html_report] Processing HTML content for feature: 'primary_key' (Assigned Main Tab ID: b0224c66-48ba-43e2-8899-f541e2089ae8).
+[2025-08-13 16:57:30] INFO: Entering function 'generate_feature_visualizations' for feature: 'primary_key' (Original Type: integer).
+[2025-08-13 16:57:30] DEBUG: Confirmed presence of 'primary_key_smalls' in df_smalls for feature 'primary_key'. Proceeding with visualizations.
+[2025-08-13 16:57:30] INFO: Generating histogram for feature 'primary_key' using the 'primary_key_smalls' column.
+[2025-08-13 16:57:30] DEBUG: Histogram generated for 'primary_key' using 'primary_key_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:30] INFO: Generating pie chart for feature 'primary_key' using the 'primary_key_smalls' column.
+[2025-08-13 16:57:30] DEBUG: Pie chart generated for 'primary_key' using 'primary_key_smalls' column. Interactive plot prepared.
+[2025-08-13 16:57:30] INFO: Preparing detailed frequency/summary table for feature 'primary_key'.
+[2025-08-13 16:57:30] DEBUG: Descriptive statistics table generated for 'primary_key' (numeric/integer) using original data.
+[2025-08-13 16:57:30] INFO: Preparing stability plot for feature 'primary_key'. Checking date column availability.
+[2025-08-13 16:57:30] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'primary_key_smalls'.
+[2025-08-13 16:57:30] DEBUG: Filtered stability data for 'primary_key_smalls': 1500 rows after removing NAs in date and feature columns.
+[2025-08-13 16:57:30] DEBUG: Date column 'date_col' in stability data confirmed/converted to Date type.
+[2025-08-13 16:57:30] INFO: Generating volume stability plot for feature 'primary_key_smalls'.
+[2025-08-13 16:57:31] DEBUG: Volume stability plot successfully generated for 'primary_key_smalls'.
+[2025-08-13 16:57:31] INFO: Target column 'numeric_target' provided. Generating mean target and rank stability plots.
+[2025-08-13 16:57:31] INFO: Generating mean target stability plot for 'primary_key_smalls'.
+[2025-08-13 16:57:31] DEBUG: Mean target stability plot successfully generated for 'primary_key_smalls'.
+[2025-08-13 16:57:31] INFO: Generating rank stability plot for 'primary_key_smalls'.
+[2025-08-13 16:57:31] DEBUG: Rank stability plot successfully generated for 'primary_key_smalls'.
+[2025-08-13 16:57:31] INFO: Combined volume, mean CR, and rank stability plots generated for 'primary_key_smalls'.
+[2025-08-13 16:57:31] INFO: Preparing specific plot for feature 'primary_key' based on its data type ('integer').
+[2025-08-13 16:57:31] DEBUG: Density plot generated for 'primary_key' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-13 16:57:31] INFO: Exiting function 'generate_feature_visualizations' for feature: 'primary_key'. All visuals assembled.
+[2025-08-13 16:57:31] DEBUG: All visualization elements prepared for feature 'primary_key'.
+[2025-08-13 16:57:31] DEBUG: Defined 6 sub-tabs for feature 'primary_key'.
+[2025-08-13 16:57:31] DEBUG: Sub-tab navigation links created for feature 'primary_key'.
+[2025-08-13 16:57:31] DEBUG: Sub-tab content containers created for feature 'primary_key'.
+[2025-08-13 16:57:31] DEBUG: Main tab panel assembled for feature 'primary_key'.
+[2025-08-13 16:57:31] INFO: All feature tab contents assembled with their respective sub-tabs.
+[2025-08-13 16:57:31] DEBUG: Main navigation links (tabs) created.
+[2025-08-13 16:57:31] DEBUG: Main tab content containers created.
+[2025-08-13 16:57:31] DEBUG: Full HTML page structure assembled using htmltools.
+[2025-08-13 16:57:34] INFO: Self-contained HTML report successfully generated and saved to: 'report_outputs/feature_report.html'.
+[2025-08-13 16:57:34] INFO: Self-contained HTML report successfully generated and saved to: 'report_outputs/feature_report.html'.
+[2025-08-13 16:57:34] DEBUG: [PHASE 7 END] Global log_file_conn status: is.null: FALSE, isOpen: TRUE.
+[2025-08-13 16:57:34] DEBUG: [PHASE 8 START] Global log_file_conn status: is.null: FALSE, isOpen: TRUE.
+[2025-08-13 16:57:34] INFO: Attempting final explicit closing of log file 'report_outputs/profiling_log.txt'.
