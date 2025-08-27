@@ -1,26 +1,29 @@
 # Automated Data Profiling & Visualization Report Generator for R
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-R-blue.svg" alt="Language R">
+</p>
 
 An advanced, one-click R solution for performing comprehensive data profiling and generating a beautiful, interactive, self-contained HTML report. Move from a raw dataframe to deep, actionable insights in seconds.
 
 ***
 
-##  Table of Contents
-* [ Why Use This Profiler?](#-why-use-this-profiler-benefits--use-cases)
-* [ Detailed Workflow Diagram](#-detailed-workflow-diagram)
-* [ Core Functions & Logic](#️-core-functions--logic)
-* [ Parameter Deep Dive](#️-parameter-deep-dive)
-* [ Understanding the Outputs](#-understanding-the-outputs)
-* [ Getting Started](#-getting-started)
-* [ Dependencies](#dependencies)
+## Table of Contents
+* [Why Use This Profiler?](#why-use-this-profiler-benefits--use-cases)
+* [Detailed Workflow Diagram](#detailed-workflow-diagram)
+* [Core Functions & Logic](#️core-functions--logic)
+* [Parameter Deep Dive](#️parameter-deep-dive)
+* [Understanding the Outputs](#understanding-the-outputs)
+* [Getting Started](#getting-started)
+* [Dependencies](#dependencies)
 
 ***
 
-##  Why Use This Profiler? Benefits & Use Cases
+## Why Use This Profiler? Benefits & Use Cases
 
 This script is more than just a summary tool; it's a powerful accelerator for any data-driven project. It automates the tedious, time-consuming, and critical first step of any analysis: understanding your data.
 
-### For Data Scientists & Analysts 
+### For Data Scientists & Analysts
 * **Accelerate Exploratory Data Analysis (EDA):** The most time-consuming phase of a project is often the initial data exploration. This script automates 90% of that work, delivering rich visualizations and statistics instantly. This frees you up to focus on hypothesis generation and feature engineering rather than boilerplate plotting code.
 * **Rapid Data Quality Assessment:** Quickly identify critical data quality issues that can derail a project:
     * **Completeness:** The summary report highlights the percentage of nulls in various forms (`NA`, `""`, `"null"`), allowing you to spot incomplete features immediately.
@@ -40,7 +43,7 @@ This script is more than just a summary tool; it's a powerful accelerator for an
 
 ***
 
-##  Detailed Workflow Diagram
+## Detailed Workflow Diagram
 
 The script executes a sophisticated, multi-stage pipeline to transform a raw dataframe into a polished report. This diagram illustrates the flow of data and the function responsible at each step.
 
@@ -115,7 +118,7 @@ The script executes a sophisticated, multi-stage pipeline to transform a raw dat
 
 ***
 
-## 🛠 Core Functions & Logic
+## Core Functions & Logic
 
 The project's power comes from its modular design, where each script has a distinct and important role.
 
@@ -145,7 +148,7 @@ The project's power comes from its modular design, where each script has a disti
 
 ***
 
-##  Parameter Deep Dive
+## Parameter Deep Dive
 
 The main function `generate_data_profile_report` is highly tunable. Understanding these parameters is key to tailoring the report to your specific needs.
 
@@ -164,7 +167,7 @@ The main function `generate_data_profile_report` is highly tunable. Understandin
 
 ***
 
-##  Understanding the Outputs
+## Understanding the Outputs
 
 The script generates a set of highly useful files in your specified `output_dir`:
 
@@ -192,7 +195,7 @@ The script generates a set of highly useful files in your specified `output_dir`
 
 ***
 
-##  Getting Started
+## Getting Started
 
 1.  **File Structure**: Place all the downloaded `.R` script files into a sub-directory named `source` within your project folder. Your main script should be in the root of the project folder.
 
@@ -272,4 +275,3 @@ The script will automatically check for and offer to install the following requi
 
 ### License
 This project is made available for informational purposes only. The intellectual property and source code remain the exclusive property of the author. No part of the source code may be copied, distributed, or modified without explicit permission.
-
