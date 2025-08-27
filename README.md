@@ -11,7 +11,7 @@ An advanced, one-click R solution for performing comprehensive data profiling an
 ## Table of Contents
 * [Why Use This Profiler?](#why-use-this-profiler-benefits--use-cases)
 * [Detailed Workflow Diagram](#detailed-workflow-diagram)
-* [Core Functions & Logic](#️core-functions--logic)
+* [Core Functions & Logic](#️core-functions-&-logic)
 * [Parameter Deep Dive](#️parameter-deep-dive)
 * [Understanding the Outputs](#understanding-the-outputs)
 * [Getting Started](#getting-started)
@@ -275,3 +275,4 @@ The script will automatically check for and offer to install the following requi
 
 ### License
 This project is made available for informational purposes only. The intellectual property and source code remain the exclusive property of the author. No part of the source code may be copied, distributed, or modified without explicit permission.
+
