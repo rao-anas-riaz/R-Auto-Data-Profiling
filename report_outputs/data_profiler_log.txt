@@ -1,0 +1,873 @@
+[2025-08-27 21:29:31] INFO: Starting data profiling report generation.
+[2025-08-27 21:29:31] INFO: Beginning script execution with provided parameters.
+[2025-08-27 21:29:31] INFO: Parameters: output_dir='output', log_file_name='data_profiler_log.txt', generate_plots=TRUE.
+[2025-08-27 21:29:31] INFO: All required packages loaded successfully.
+[2025-08-27 21:29:31] INFO: Input data prepared as a data.table with 5000 rows and 18 columns.
+[2025-08-27 21:29:31] INFO: Date column 'order_date' validated and converted to Date type.
+[2025-08-27 21:29:31] INFO: Entering function 'process_data'. Initiating overall data processing workflow.
+[2025-08-27 21:29:31] INFO: Processing data for 19 specified features: order_date, price, character_dominant, character_all_high, character_some_low, character_random, numeric_dominant, numeric_all_high, numeric_some_low, numeric_random, integer_dominant, integer_all_high, integer_some_low, integer_random, char_binary, num_binary, int_binary, registration_date, days_since_registration_date.
+[2025-08-27 21:29:31] INFO: Entering function 'detect_data_types'. Analyzing 19 features to infer their data types.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'order_date'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'order_date': Filtered 5000 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'order_date': Time component (':') detected: FALSE.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'order_date' detected as 'date' type (100.00% success rate).
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'price'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'price': Filtered 5000 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'price' detected as 'numeric' type (decimal or floating point).
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'character_dominant'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'character_dominant': Filtered 4500 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'character_dominant': Time component (':') detected: FALSE.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'character_dominant' defaulted to 'character' type after specific type checks.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'character_all_high'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'character_all_high': Filtered 4500 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'character_all_high': Time component (':') detected: FALSE.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'character_all_high' defaulted to 'character' type after specific type checks.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'character_some_low'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'character_some_low': Filtered 4500 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'character_some_low': Time component (':') detected: FALSE.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'character_some_low' defaulted to 'character' type after specific type checks.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'character_random'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'character_random': Filtered 4500 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'character_random': Time component (':') detected: FALSE.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'character_random' defaulted to 'character' type after specific type checks.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'numeric_dominant'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'numeric_dominant': Filtered 4500 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'numeric_dominant' detected as 'numeric' type (decimal or floating point).
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'numeric_all_high'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'numeric_all_high': Filtered 4500 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'numeric_all_high' detected as 'numeric' type (decimal or floating point).
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'numeric_some_low'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'numeric_some_low': Filtered 4500 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'numeric_some_low' detected as 'numeric' type (decimal or floating point).
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'numeric_random'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'numeric_random': Filtered 4500 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'numeric_random' detected as 'numeric' type (decimal or floating point).
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'integer_dominant'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'integer_dominant': Filtered 4500 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'integer_dominant' detected as 'integer' type.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'integer_all_high'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'integer_all_high': Filtered 4500 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'integer_all_high' detected as 'integer' type.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'integer_some_low'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'integer_some_low': Filtered 4500 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'integer_some_low' detected as 'integer' type.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'integer_random'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'integer_random': Filtered 4500 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'integer_random' detected as 'integer' type.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'char_binary'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'char_binary': Filtered 4488 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'char_binary': Time component (':') detected: FALSE.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'char_binary' defaulted to 'character' type after specific type checks.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'char_binary' detected as 'character-logical' type based on unique values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'num_binary'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'num_binary': Filtered 4444 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'num_binary' detected as 'integer' type.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'num_binary' detected as 'integer-logical' type based on unique values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'int_binary'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'int_binary': Filtered 4783 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'int_binary' detected as 'integer' type.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Processing feature: 'registration_date'. Extracting column data.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'registration_date': Filtered 4750 non-empty/non-null values.
+[2025-08-27 21:29:31] DEBUG: [detect_data_types] Feature 'registration_date': Time component (':') detected: FALSE.
+[2025-08-27 21:29:32] DEBUG: [detect_data_types] Feature 'registration_date' detected as 'date' type (100.00% success rate).
+[2025-08-27 21:29:32] DEBUG: [detect_data_types] Processing feature: 'days_since_registration_date'. Extracting column data.
+[2025-08-27 21:29:32] DEBUG: [detect_data_types] Feature 'days_since_registration_date': Filtered 4750 non-empty/non-null values.
+[2025-08-27 21:29:32] DEBUG: [detect_data_types] Feature 'days_since_registration_date' detected as 'integer' type.
+[2025-08-27 21:29:32] INFO: Exiting function 'detect_data_types'. All specified features processed.
+[2025-08-27 21:29:32] INFO: [process_data] Data types detected for 19 features. Reviewing detected types for consistency.
+[2025-08-27 21:29:32] DEBUG: [process_data] Detected types table: 
+Index: <feature_name>
+                    feature_name         data_type
+                          <char>            <char>
+ 1:                   order_date              date
+ 2:                        price           numeric
+ 3:           character_dominant         character
+ 4:           character_all_high         character
+ 5:           character_some_low         character
+ 6:             character_random         character
+ 7:             numeric_dominant           numeric
+ 8:             numeric_all_high           numeric
+ 9:             numeric_some_low           numeric
+10:               numeric_random           numeric
+11:             integer_dominant           integer
+12:             integer_all_high           integer
+13:             integer_some_low           integer
+14:               integer_random           integer
+15:                  char_binary character-logical
+16:                   num_binary   integer-logical
+17:                   int_binary           integer
+18:            registration_date              date
+19: days_since_registration_date           integer
+
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'order_date'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'order_date': Number of unique non-NA unique values = 101, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'order_date': Null percentages - Logical NA: 0.00%, Char NA: 0.00%, Empty String: 0.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'order_date': Top 10 categories identified. Top category percentage: 1.48%. All top N percentages: 1.48, 1.4, 1.34, 1.3, 1.28, 1.28, 1.24, 1.24, 1.22, 1.2.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'price'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'price': Number of unique non-NA unique values = 5000, Is primary key = TRUE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'price': Null percentages - Logical NA: 0.00%, Char NA: 0.00%, Empty String: 0.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'price': Top 10 categories identified. Top category percentage: 0.02%. All top N percentages: 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'character_dominant'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'character_dominant': Number of unique non-NA unique values = 179, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'character_dominant': Null percentages - Logical NA: 2.50%, Char NA: 2.50%, Empty String: 5.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'character_dominant': Top 10 categories identified. Top category percentage: 5.00%. All top N percentages: 5, 2.5, 2.5, 1.2, 1.16, 1.16, 1.08, 1.06, 1.06, 1.06.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'character_all_high'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'character_all_high': Number of unique non-NA unique values = 30, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'character_all_high': Null percentages - Logical NA: 2.50%, Char NA: 2.50%, Empty String: 5.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'character_all_high': Top 10 categories identified. Top category percentage: 5.00%. All top N percentages: 5, 4.78, 4.68, 4.62, 4.36, 4.36, 4.26, 4.18, 3.9, 3.6.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'character_some_low'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'character_some_low': Number of unique non-NA unique values = 224, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'character_some_low': Null percentages - Logical NA: 2.50%, Char NA: 2.50%, Empty String: 5.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'character_some_low': Top 10 categories identified. Top category percentage: 5.00%. All top N percentages: 5, 2.5, 2.5, 0.82, 0.8, 0.78, 0.76, 0.74, 0.74, 0.72.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'character_random'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'character_random': Number of unique non-NA unique values = 172, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'character_random': Null percentages - Logical NA: 2.50%, Char NA: 2.50%, Empty String: 5.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'character_random': Top 10 categories identified. Top category percentage: 5.00%. All top N percentages: 5, 2.5, 2.5, 0.78, 0.78, 0.78, 0.76, 0.74, 0.74, 0.74.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'numeric_dominant'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'numeric_dominant': Number of unique non-NA unique values = 159, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'numeric_dominant': Null percentages - Logical NA: 2.50%, Char NA: 2.50%, Empty String: 5.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'numeric_dominant': Top 10 categories identified. Top category percentage: 5.00%. All top N percentages: 5, 2.5, 2.5, 1.46, 1.26, 1.2, 1.2, 1.18, 1.16, 1.16.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'numeric_all_high'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'numeric_all_high': Number of unique non-NA unique values = 30, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'numeric_all_high': Null percentages - Logical NA: 2.50%, Char NA: 2.50%, Empty String: 5.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'numeric_all_high': Top 10 categories identified. Top category percentage: 5.00%. All top N percentages: 5, 4.82, 4.34, 4.32, 4.22, 4.22, 4.12, 4.08, 4.02, 4.02.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'numeric_some_low'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'numeric_some_low': Number of unique non-NA unique values = 287, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'numeric_some_low': Null percentages - Logical NA: 2.50%, Char NA: 2.50%, Empty String: 5.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'numeric_some_low': Top 10 categories identified. Top category percentage: 5.00%. All top N percentages: 5, 2.5, 2.5, 0.8, 0.7, 0.68, 0.66, 0.66, 0.66, 0.62.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'numeric_random'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'numeric_random': Number of unique non-NA unique values = 186, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'numeric_random': Null percentages - Logical NA: 2.50%, Char NA: 2.50%, Empty String: 5.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'numeric_random': Top 10 categories identified. Top category percentage: 5.00%. All top N percentages: 5, 2.5, 2.5, 0.68, 0.68, 0.68, 0.68, 0.68, 0.68, 0.66.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'integer_dominant'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'integer_dominant': Number of unique non-NA unique values = 156, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'integer_dominant': Null percentages - Logical NA: 2.50%, Char NA: 2.50%, Empty String: 5.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'integer_dominant': Top 10 categories identified. Top category percentage: 5.00%. All top N percentages: 5, 2.5, 2.5, 1.54, 1.5, 1.5, 1.36, 1.26, 1.2, 1.12.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'integer_all_high'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'integer_all_high': Number of unique non-NA unique values = 30, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'integer_all_high': Null percentages - Logical NA: 2.50%, Char NA: 2.50%, Empty String: 5.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'integer_all_high': Top 10 categories identified. Top category percentage: 5.00%. All top N percentages: 5, 4.6, 4.52, 4.38, 4.34, 4.22, 4.16, 4.1, 3.9, 3.86.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'integer_some_low'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'integer_some_low': Number of unique non-NA unique values = 123, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'integer_some_low': Null percentages - Logical NA: 2.50%, Char NA: 2.50%, Empty String: 5.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'integer_some_low': Top 10 categories identified. Top category percentage: 5.00%. All top N percentages: 5, 2.5, 2.5, 2.26, 2.02, 1.82, 1.5, 1.4, 1.36, 1.32.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'integer_random'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'integer_random': Number of unique non-NA unique values = 100, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'integer_random': Null percentages - Logical NA: 2.50%, Char NA: 2.50%, Empty String: 5.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'integer_random': Top 10 categories identified. Top category percentage: 5.00%. All top N percentages: 5, 2.5, 2.5, 1.92, 1.82, 1.76, 1.58, 1.52, 1.14, 1.14.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'char_binary'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'char_binary': Number of unique non-NA unique values = 2, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'char_binary': Null percentages - Logical NA: 3.36%, Char NA: 3.02%, Empty String: 3.86%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'char_binary': Top 5 categories identified. Top category percentage: 44.88%. All top N percentages: 44.88, 44.88, 3.86, 3.36, 3.02.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'num_binary'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'num_binary': Number of unique non-NA unique values = 2, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'num_binary': Null percentages - Logical NA: 5.74%, Char NA: 0.00%, Empty String: 5.38%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'num_binary': Top 4 categories identified. Top category percentage: 48.90%. All top N percentages: 48.9, 39.98, 5.74, 5.38.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'int_binary'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'int_binary': Number of unique non-NA unique values = 3, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'int_binary': Null percentages - Logical NA: 4.34%, Char NA: 0.00%, Empty String: 0.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'int_binary': Top 4 categories identified. Top category percentage: 60.70%. All top N percentages: 60.7, 29.64, 5.32, 4.34.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'registration_date'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'registration_date': Number of unique non-NA unique values = 365, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'registration_date': Null percentages - Logical NA: 5.00%, Char NA: 0.00%, Empty String: 0.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'registration_date': Top 10 categories identified. Top category percentage: 5.00%. All top N percentages: 5, 0.46, 0.46, 0.46, 0.44, 0.44, 0.44, 0.44, 0.44, 0.44.
+[2025-08-27 21:29:32] INFO: Entering function 'summarize_feature' for feature: 'days_since_registration_date'.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'days_since_registration_date': Number of unique non-NA unique values = 365, Is primary key = FALSE.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'days_since_registration_date': Null percentages - Logical NA: 5.00%, Char NA: 0.00%, Empty String: 0.00%.
+[2025-08-27 21:29:32] DEBUG: [summarize_feature] Feature 'days_since_registration_date': Top 10 categories identified. Top category percentage: 5.00%. All top N percentages: 5, 0.46, 0.46, 0.46, 0.44, 0.44, 0.44, 0.44, 0.44, 0.44.
+[2025-08-27 21:29:32] INFO: [process_data] Individual feature summaries generated for all processed features.
+[2025-08-27 21:29:32] DEBUG: [process_data] All individual feature summaries successfully combined into 'summary_dt'.
+[2025-08-27 21:29:32] DEBUG: [process_data] Summaries successfully merged with detected data types.
+[2025-08-27 21:29:32] INFO: Exiting function 'process_data'. Data processing and summarization complete.
+[2025-08-27 21:29:32] INFO: Entering 'exclude_features'. Identifying features that should be excluded from plotting based on defined criteria.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'char_binary' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'character_all_high' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'character_dominant' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'character_random' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'character_some_low' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'days_since_registration_date' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'int_binary' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'integer_all_high' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'integer_dominant' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'integer_random' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'integer_some_low' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'num_binary' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'numeric_all_high' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'numeric_dominant' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'numeric_random' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'numeric_some_low' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'order_date' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'price' for exclusion.
+[2025-08-27 21:29:32] DEBUG: [exclude_features] Evaluating feature 'registration_date' for exclusion.
+[2025-08-27 21:29:32] INFO: No features were excluded from plotting based on the specified criteria.
+[2025-08-27 21:29:32] INFO: Exiting 'exclude_features'. Total unique features identified for exclusion: 0.
+[2025-08-27 21:29:33] INFO: Entering 'create_binned_dataframe'. Preparing binned versions of features for plotting.
+[2025-08-27 21:29:33] INFO: Processing feature 'char_binary' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'char_binary' has detected data type 'character-logical'.
+[2025-08-27 21:29:33] DEBUG: Feature 'char_binary': Identified 512 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] INFO: Logical 'char_binary': Converted to character for display. No binning applied as it's binary.
+[2025-08-27 21:29:33] DEBUG: Binned column 'char_binary_binned' created in df_binned for feature 'char_binary'.
+[2025-08-27 21:29:33] INFO: Processing feature 'character_all_high' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'character_all_high' has detected data type 'character'.
+[2025-08-27 21:29:33] DEBUG: Feature 'character_all_high': Identified 500 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] DEBUG: Binning logic for character feature 'character_all_high'. Total non-null values: 4500.
+[2025-08-27 21:29:33] INFO: Character 'character_all_high': Unique non-NULL values (30) are within 'binning_threshold' (100). No aggressive binning applied, using raw categories.
+[2025-08-27 21:29:33] DEBUG: Binned column 'character_all_high_binned' created in df_binned for feature 'character_all_high'.
+[2025-08-27 21:29:33] INFO: Processing feature 'character_dominant' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'character_dominant' has detected data type 'character'.
+[2025-08-27 21:29:33] DEBUG: Feature 'character_dominant': Identified 500 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] DEBUG: Binning logic for character feature 'character_dominant'. Total non-null values: 4500.
+[2025-08-27 21:29:33] INFO: Character 'character_dominant': Unique non-NULL values (179) exceed 'binning_threshold' (100). Grouping less frequent categories into 'others'.
+[2025-08-27 21:29:33] INFO: Character 'character_dominant' binned into top 100 categories plus 'others'.
+[2025-08-27 21:29:33] DEBUG: Binned column 'character_dominant_binned' created in df_binned for feature 'character_dominant'.
+[2025-08-27 21:29:33] INFO: Processing feature 'character_random' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'character_random' has detected data type 'character'.
+[2025-08-27 21:29:33] DEBUG: Feature 'character_random': Identified 500 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] DEBUG: Binning logic for character feature 'character_random'. Total non-null values: 4500.
+[2025-08-27 21:29:33] INFO: Character 'character_random': Unique non-NULL values (172) exceed 'binning_threshold' (100). Grouping less frequent categories into 'others'.
+[2025-08-27 21:29:33] INFO: Character 'character_random' binned into top 100 categories plus 'others'.
+[2025-08-27 21:29:33] DEBUG: Binned column 'character_random_binned' created in df_binned for feature 'character_random'.
+[2025-08-27 21:29:33] INFO: Processing feature 'character_some_low' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'character_some_low' has detected data type 'character'.
+[2025-08-27 21:29:33] DEBUG: Feature 'character_some_low': Identified 500 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] DEBUG: Binning logic for character feature 'character_some_low'. Total non-null values: 4500.
+[2025-08-27 21:29:33] INFO: Character 'character_some_low': Unique non-NULL values (224) exceed 'binning_threshold' (100). Grouping less frequent categories into 'others'.
+[2025-08-27 21:29:33] INFO: Character 'character_some_low' binned into top 100 categories plus 'others'.
+[2025-08-27 21:29:33] DEBUG: Binned column 'character_some_low_binned' created in df_binned for feature 'character_some_low'.
+[2025-08-27 21:29:33] INFO: Processing feature 'days_since_registration_date' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'days_since_registration_date' has detected data type 'integer'.
+[2025-08-27 21:29:33] DEBUG: Feature 'days_since_registration_date': Identified 250 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] DEBUG: Binning logic for numeric/integer feature 'days_since_registration_date'. Total non-null values: 4750.
+[2025-08-27 21:29:33] INFO: Numeric 'days_since_registration_date': Unique non-NULL values (365) exceed 'binning_threshold' (100). Applying binning techniques.
+[2025-08-27 21:29:33] DEBUG: Numeric 'days_since_registration_date': Range is [101.00, 465.00].
+[2025-08-27 21:29:33] DEBUG: Numeric 'days_since_registration_date': Initial breaks generated. Count: 86.
+[2025-08-27 21:29:33] DEBUG: Numeric 'days_since_registration_date': Values cut into 85 bins.
+[2025-08-27 21:29:33] INFO: Numeric 'days_since_registration_date' successfully binned into 38 categories with formatted labels.
+[2025-08-27 21:29:33] DEBUG: Binned column 'days_since_registration_date_binned' created in df_binned for feature 'days_since_registration_date'.
+[2025-08-27 21:29:33] INFO: Processing feature 'int_binary' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'int_binary' has detected data type 'integer'.
+[2025-08-27 21:29:33] DEBUG: Feature 'int_binary': Identified 217 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] DEBUG: Binning logic for numeric/integer feature 'int_binary'. Total non-null values: 4783.
+[2025-08-27 21:29:33] INFO: Numeric 'int_binary': Unique non-NULL values (3) are within 'binning_threshold' (100). No further binning applied, using raw values.
+[2025-08-27 21:29:33] DEBUG: Binned column 'int_binary_binned' created in df_binned for feature 'int_binary'.
+[2025-08-27 21:29:33] INFO: Processing feature 'integer_all_high' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'integer_all_high' has detected data type 'integer'.
+[2025-08-27 21:29:33] DEBUG: Feature 'integer_all_high': Identified 500 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] DEBUG: Binning logic for numeric/integer feature 'integer_all_high'. Total non-null values: 4500.
+[2025-08-27 21:29:33] INFO: Numeric 'integer_all_high': Unique non-NULL values (30) are within 'binning_threshold' (100). No further binning applied, using raw values.
+[2025-08-27 21:29:33] DEBUG: Binned column 'integer_all_high_binned' created in df_binned for feature 'integer_all_high'.
+[2025-08-27 21:29:33] INFO: Processing feature 'integer_dominant' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'integer_dominant' has detected data type 'integer'.
+[2025-08-27 21:29:33] DEBUG: Feature 'integer_dominant': Identified 500 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] DEBUG: Binning logic for numeric/integer feature 'integer_dominant'. Total non-null values: 4500.
+[2025-08-27 21:29:33] INFO: Numeric 'integer_dominant': Unique non-NULL values (156) exceed 'binning_threshold' (100). Applying binning techniques.
+[2025-08-27 21:29:33] DEBUG: Numeric 'integer_dominant': Range is [13.00, 995.00].
+[2025-08-27 21:29:33] DEBUG: Numeric 'integer_dominant': Initial breaks generated. Count: 109.
+[2025-08-27 21:29:33] DEBUG: Numeric 'integer_dominant': Values cut into 108 bins.
+[2025-08-27 21:29:33] INFO: Numeric 'integer_dominant' successfully binned into 48 categories with formatted labels.
+[2025-08-27 21:29:33] DEBUG: Binned column 'integer_dominant_binned' created in df_binned for feature 'integer_dominant'.
+[2025-08-27 21:29:33] INFO: Processing feature 'integer_random' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'integer_random' has detected data type 'integer'.
+[2025-08-27 21:29:33] DEBUG: Feature 'integer_random': Identified 500 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] DEBUG: Binning logic for numeric/integer feature 'integer_random'. Total non-null values: 4500.
+[2025-08-27 21:29:33] INFO: Numeric 'integer_random': Unique non-NULL values (100) are within 'binning_threshold' (100). No further binning applied, using raw values.
+[2025-08-27 21:29:33] DEBUG: Binned column 'integer_random_binned' created in df_binned for feature 'integer_random'.
+[2025-08-27 21:29:33] INFO: Processing feature 'integer_some_low' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'integer_some_low' has detected data type 'integer'.
+[2025-08-27 21:29:33] DEBUG: Feature 'integer_some_low': Identified 500 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] DEBUG: Binning logic for numeric/integer feature 'integer_some_low'. Total non-null values: 4500.
+[2025-08-27 21:29:33] INFO: Numeric 'integer_some_low': Unique non-NULL values (123) exceed 'binning_threshold' (100). Applying binning techniques.
+[2025-08-27 21:29:33] DEBUG: Numeric 'integer_some_low': Range is [14.00, 988.00].
+[2025-08-27 21:29:33] DEBUG: Numeric 'integer_some_low': Initial breaks generated. Count: 117.
+[2025-08-27 21:29:33] DEBUG: Numeric 'integer_some_low': Values cut into 116 bins.
+[2025-08-27 21:29:33] INFO: Numeric 'integer_some_low' successfully binned into 45 categories with formatted labels.
+[2025-08-27 21:29:33] DEBUG: Binned column 'integer_some_low_binned' created in df_binned for feature 'integer_some_low'.
+[2025-08-27 21:29:33] INFO: Processing feature 'num_binary' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'num_binary' has detected data type 'integer-logical'.
+[2025-08-27 21:29:33] DEBUG: Feature 'num_binary': Identified 556 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] INFO: Logical 'num_binary': Converted to character for display. No binning applied as it's binary.
+[2025-08-27 21:29:33] DEBUG: Binned column 'num_binary_binned' created in df_binned for feature 'num_binary'.
+[2025-08-27 21:29:33] INFO: Processing feature 'numeric_all_high' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'numeric_all_high' has detected data type 'numeric'.
+[2025-08-27 21:29:33] DEBUG: Feature 'numeric_all_high': Identified 500 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] DEBUG: Binning logic for numeric/integer feature 'numeric_all_high'. Total non-null values: 4500.
+[2025-08-27 21:29:33] INFO: Numeric 'numeric_all_high': Unique non-NULL values (30) are within 'binning_threshold' (100). No further binning applied, using raw values.
+[2025-08-27 21:29:33] DEBUG: Binned column 'numeric_all_high_binned' created in df_binned for feature 'numeric_all_high'.
+[2025-08-27 21:29:33] INFO: Processing feature 'numeric_dominant' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'numeric_dominant' has detected data type 'numeric'.
+[2025-08-27 21:29:33] DEBUG: Feature 'numeric_dominant': Identified 500 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] DEBUG: Binning logic for numeric/integer feature 'numeric_dominant'. Total non-null values: 4500.
+[2025-08-27 21:29:33] INFO: Numeric 'numeric_dominant': Unique non-NULL values (159) exceed 'binning_threshold' (100). Applying binning techniques.
+[2025-08-27 21:29:33] DEBUG: Numeric 'numeric_dominant': Range is [14.55, 998.81].
+[2025-08-27 21:29:33] DEBUG: Numeric 'numeric_dominant': Initial breaks generated. Count: 101.
+[2025-08-27 21:29:33] DEBUG: Numeric 'numeric_dominant': Values cut into 100 bins.
+[2025-08-27 21:29:33] INFO: Numeric 'numeric_dominant' successfully binned into 49 categories with formatted labels.
+[2025-08-27 21:29:33] DEBUG: Binned column 'numeric_dominant_binned' created in df_binned for feature 'numeric_dominant'.
+[2025-08-27 21:29:33] INFO: Processing feature 'numeric_random' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'numeric_random' has detected data type 'numeric'.
+[2025-08-27 21:29:33] DEBUG: Feature 'numeric_random': Identified 500 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] DEBUG: Binning logic for numeric/integer feature 'numeric_random'. Total non-null values: 4500.
+[2025-08-27 21:29:33] INFO: Numeric 'numeric_random': Unique non-NULL values (186) exceed 'binning_threshold' (100). Applying binning techniques.
+[2025-08-27 21:29:33] DEBUG: Numeric 'numeric_random': Range is [17.36, 997.57].
+[2025-08-27 21:29:33] DEBUG: Numeric 'numeric_random': Initial breaks generated. Count: 114.
+[2025-08-27 21:29:33] DEBUG: Numeric 'numeric_random': Values cut into 113 bins.
+[2025-08-27 21:29:33] INFO: Numeric 'numeric_random' successfully binned into 49 categories with formatted labels.
+[2025-08-27 21:29:33] DEBUG: Binned column 'numeric_random_binned' created in df_binned for feature 'numeric_random'.
+[2025-08-27 21:29:33] INFO: Processing feature 'numeric_some_low' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'numeric_some_low' has detected data type 'numeric'.
+[2025-08-27 21:29:33] DEBUG: Feature 'numeric_some_low': Identified 500 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] DEBUG: Binning logic for numeric/integer feature 'numeric_some_low'. Total non-null values: 4500.
+[2025-08-27 21:29:33] INFO: Numeric 'numeric_some_low': Unique non-NULL values (287) exceed 'binning_threshold' (100). Applying binning techniques.
+[2025-08-27 21:29:33] DEBUG: Numeric 'numeric_some_low': Range is [11.73, 987.36].
+[2025-08-27 21:29:33] DEBUG: Numeric 'numeric_some_low': Initial breaks generated. Count: 110.
+[2025-08-27 21:29:33] DEBUG: Numeric 'numeric_some_low': Values cut into 109 bins.
+[2025-08-27 21:29:33] INFO: Numeric 'numeric_some_low' successfully binned into 51 categories with formatted labels.
+[2025-08-27 21:29:33] DEBUG: Binned column 'numeric_some_low_binned' created in df_binned for feature 'numeric_some_low'.
+[2025-08-27 21:29:33] INFO: Processing feature 'order_date' for binning.
+[2025-08-27 21:29:33] DEBUG: Feature 'order_date' has detected data type 'date'.
+[2025-08-27 21:29:33] DEBUG: Feature 'order_date': Identified 0 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:33] DEBUG: Binning logic for date/POSIXct feature 'order_date'. Total non-null values: 5000.
+[2025-08-27 21:29:33] INFO: Date 'order_date': Unique non-NULL values (101) exceed 'binning_threshold' (100). Applying time-interval based binning.
+[2025-08-27 21:29:33] DEBUG: Date 'order_date': Date range is from '2024-01-01' to '2024-04-10' (100 days).
+[2025-08-27 21:29:33] DEBUG: Date feature 'order_date' (range: 100 days): Determined optimal binning interval unit: 'week'.
+[2025-08-27 21:29:41] INFO: Date feature 'order_date' binned successfully into 15 distinct time intervals.
+[2025-08-27 21:29:41] DEBUG: Binned column 'order_date_binned' created in df_binned for feature 'order_date'.
+[2025-08-27 21:29:41] INFO: Processing feature 'price' for binning.
+[2025-08-27 21:29:41] DEBUG: Feature 'price' has detected data type 'numeric'.
+[2025-08-27 21:29:41] DEBUG: Feature 'price': Identified 0 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:41] DEBUG: Binning logic for numeric/integer feature 'price'. Total non-null values: 5000.
+[2025-08-27 21:29:41] INFO: Numeric 'price': Unique non-NULL values (5000) exceed 'binning_threshold' (100). Applying binning techniques.
+[2025-08-27 21:29:41] DEBUG: Numeric 'price': Range is [102.70, 379.68].
+[2025-08-27 21:29:41] DEBUG: Numeric 'price': Initial breaks generated. Count: 69.
+[2025-08-27 21:29:41] DEBUG: Numeric 'price': Values cut into 68 bins.
+[2025-08-27 21:29:41] INFO: Numeric 'price' successfully binned into 52 categories with formatted labels.
+[2025-08-27 21:29:41] DEBUG: Binned column 'price_binned' created in df_binned for feature 'price'.
+[2025-08-27 21:29:41] INFO: Processing feature 'registration_date' for binning.
+[2025-08-27 21:29:41] DEBUG: Feature 'registration_date' has detected data type 'date'.
+[2025-08-27 21:29:41] DEBUG: Feature 'registration_date': Identified 250 values as NULL/empty. These will be mapped to 'NULL' string.
+[2025-08-27 21:29:41] DEBUG: Binning logic for date/POSIXct feature 'registration_date'. Total non-null values: 4750.
+[2025-08-27 21:29:41] INFO: Date 'registration_date': Unique non-NULL values (365) exceed 'binning_threshold' (100). Applying time-interval based binning.
+[2025-08-27 21:29:41] DEBUG: Date 'registration_date': Date range is from '2023-01-01' to '2023-12-31' (364 days).
+[2025-08-27 21:29:41] DEBUG: Date feature 'registration_date' (range: 364 days): Determined optimal binning interval unit: 'week'.
+[2025-08-27 21:29:48] INFO: Date feature 'registration_date' binned successfully into 53 distinct time intervals.
+[2025-08-27 21:29:48] DEBUG: Binned column 'registration_date_binned' created in df_binned for feature 'registration_date'.
+[2025-08-27 21:29:48] INFO: Exiting 'create_binned_dataframe'. Binned dataframe created.
+[2025-08-27 21:29:48] INFO: Entering 'create_smalls_dataframe'. Applying 'smalls' grouping to binned features.
+[2025-08-27 21:29:48] INFO: Calculated 'smalls' volume threshold: 100.00 rows (equivalent to 2.00% of total 5000 rows).
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'char_binary_binned' for feature 'char_binary'.
+[2025-08-27 21:29:48] DEBUG: Feature 'char_binary': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'char_binary': Identified 0 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: No categories (excluding 'NULL') in feature 'char_binary' had volume less than 2.00%. No 'smalls' grouping applied for this feature.
+[2025-08-27 21:29:48] DEBUG: New column 'char_binary_smalls' (with 'smalls' grouping) created in df_smalls for feature 'char_binary'. It now has 3 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'character_all_high_binned' for feature 'character_all_high'.
+[2025-08-27 21:29:48] DEBUG: Feature 'character_all_high': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'character_all_high': Identified 483 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: Grouped 483 unique categories into 'smalls' for feature 'character_all_high'. These categories had volume less than 2.00% (100 rows).
+[2025-08-27 21:29:48] DEBUG: New column 'character_all_high_smalls' (with 'smalls' grouping) created in df_smalls for feature 'character_all_high'. It now has 26 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'character_dominant_binned' for feature 'character_dominant'.
+[2025-08-27 21:29:48] DEBUG: Feature 'character_dominant': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'character_dominant': Identified 3666 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: Grouped 3666 unique categories into 'smalls' for feature 'character_dominant'. These categories had volume less than 2.00% (100 rows).
+[2025-08-27 21:29:48] DEBUG: New column 'character_dominant_smalls' (with 'smalls' grouping) created in df_smalls for feature 'character_dominant'. It now has 3 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'character_random_binned' for feature 'character_random'.
+[2025-08-27 21:29:48] DEBUG: Feature 'character_random': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'character_random': Identified 2959 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: Grouped 2959 unique categories into 'smalls' for feature 'character_random'. These categories had volume less than 2.00% (100 rows).
+[2025-08-27 21:29:48] DEBUG: New column 'character_random_smalls' (with 'smalls' grouping) created in df_smalls for feature 'character_random'. It now has 3 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'character_some_low_binned' for feature 'character_some_low'.
+[2025-08-27 21:29:48] DEBUG: Feature 'character_some_low': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'character_some_low': Identified 2807 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: Grouped 2807 unique categories into 'smalls' for feature 'character_some_low'. These categories had volume less than 2.00% (100 rows).
+[2025-08-27 21:29:48] DEBUG: New column 'character_some_low_smalls' (with 'smalls' grouping) created in df_smalls for feature 'character_some_low'. It now has 3 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'days_since_registration_date_binned' for feature 'days_since_registration_date'.
+[2025-08-27 21:29:48] DEBUG: Feature 'days_since_registration_date': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'days_since_registration_date': Identified 61 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: Grouped 61 unique categories into 'smalls' for feature 'days_since_registration_date'. These categories had volume less than 2.00% (100 rows).
+[2025-08-27 21:29:48] DEBUG: New column 'days_since_registration_date_smalls' (with 'smalls' grouping) created in df_smalls for feature 'days_since_registration_date'. It now has 38 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'int_binary_binned' for feature 'int_binary'.
+[2025-08-27 21:29:48] DEBUG: Feature 'int_binary': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'int_binary': Identified 0 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: No categories (excluding 'NULL') in feature 'int_binary' had volume less than 2.00%. No 'smalls' grouping applied for this feature.
+[2025-08-27 21:29:48] DEBUG: New column 'int_binary_smalls' (with 'smalls' grouping) created in df_smalls for feature 'int_binary'. It now has 4 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'integer_all_high_binned' for feature 'integer_all_high'.
+[2025-08-27 21:29:48] DEBUG: Feature 'integer_all_high': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'integer_all_high': Identified 687 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: Grouped 687 unique categories into 'smalls' for feature 'integer_all_high'. These categories had volume less than 2.00% (100 rows).
+[2025-08-27 21:29:48] DEBUG: New column 'integer_all_high_smalls' (with 'smalls' grouping) created in df_smalls for feature 'integer_all_high'. It now has 24 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'integer_dominant_binned' for feature 'integer_dominant'.
+[2025-08-27 21:29:48] DEBUG: Feature 'integer_dominant': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'integer_dominant': Identified 1335 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: Grouped 1335 unique categories into 'smalls' for feature 'integer_dominant'. These categories had volume less than 2.00% (100 rows).
+[2025-08-27 21:29:48] DEBUG: New column 'integer_dominant_smalls' (with 'smalls' grouping) created in df_smalls for feature 'integer_dominant'. It now has 22 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'integer_random_binned' for feature 'integer_random'.
+[2025-08-27 21:29:48] DEBUG: Feature 'integer_random': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'integer_random': Identified 4500 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: Grouped 4500 unique categories into 'smalls' for feature 'integer_random'. These categories had volume less than 2.00% (100 rows).
+[2025-08-27 21:29:48] DEBUG: New column 'integer_random_smalls' (with 'smalls' grouping) created in df_smalls for feature 'integer_random'. It now has 2 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'integer_some_low_binned' for feature 'integer_some_low'.
+[2025-08-27 21:29:48] DEBUG: Feature 'integer_some_low': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'integer_some_low': Identified 1382 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: Grouped 1382 unique categories into 'smalls' for feature 'integer_some_low'. These categories had volume less than 2.00% (100 rows).
+[2025-08-27 21:29:48] DEBUG: New column 'integer_some_low_smalls' (with 'smalls' grouping) created in df_smalls for feature 'integer_some_low'. It now has 22 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'num_binary_binned' for feature 'num_binary'.
+[2025-08-27 21:29:48] DEBUG: Feature 'num_binary': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'num_binary': Identified 0 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: No categories (excluding 'NULL') in feature 'num_binary' had volume less than 2.00%. No 'smalls' grouping applied for this feature.
+[2025-08-27 21:29:48] DEBUG: New column 'num_binary_smalls' (with 'smalls' grouping) created in df_smalls for feature 'num_binary'. It now has 3 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'numeric_all_high_binned' for feature 'numeric_all_high'.
+[2025-08-27 21:29:48] DEBUG: Feature 'numeric_all_high': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'numeric_all_high': Identified 603 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: Grouped 603 unique categories into 'smalls' for feature 'numeric_all_high'. These categories had volume less than 2.00% (100 rows).
+[2025-08-27 21:29:48] DEBUG: New column 'numeric_all_high_smalls' (with 'smalls' grouping) created in df_smalls for feature 'numeric_all_high'. It now has 25 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'numeric_dominant_binned' for feature 'numeric_dominant'.
+[2025-08-27 21:29:48] DEBUG: Feature 'numeric_dominant': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'numeric_dominant': Identified 1495 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: Grouped 1495 unique categories into 'smalls' for feature 'numeric_dominant'. These categories had volume less than 2.00% (100 rows).
+[2025-08-27 21:29:48] DEBUG: New column 'numeric_dominant_smalls' (with 'smalls' grouping) created in df_smalls for feature 'numeric_dominant'. It now has 23 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'numeric_random_binned' for feature 'numeric_random'.
+[2025-08-27 21:29:48] DEBUG: Feature 'numeric_random': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'numeric_random': Identified 1871 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: Grouped 1871 unique categories into 'smalls' for feature 'numeric_random'. These categories had volume less than 2.00% (100 rows).
+[2025-08-27 21:29:48] DEBUG: New column 'numeric_random_smalls' (with 'smalls' grouping) created in df_smalls for feature 'numeric_random'. It now has 21 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'numeric_some_low_binned' for feature 'numeric_some_low'.
+[2025-08-27 21:29:48] DEBUG: Feature 'numeric_some_low': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'numeric_some_low': Identified 1729 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: Grouped 1729 unique categories into 'smalls' for feature 'numeric_some_low'. These categories had volume less than 2.00% (100 rows).
+[2025-08-27 21:29:48] DEBUG: New column 'numeric_some_low_smalls' (with 'smalls' grouping) created in df_smalls for feature 'numeric_some_low'. It now has 23 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'order_date_binned' for feature 'order_date'.
+[2025-08-27 21:29:48] DEBUG: Feature 'order_date': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'order_date': Identified 0 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: No categories (excluding 'NULL') in feature 'order_date' had volume less than 2.00%. No 'smalls' grouping applied for this feature.
+[2025-08-27 21:29:48] DEBUG: New column 'order_date_smalls' (with 'smalls' grouping) created in df_smalls for feature 'order_date'. It now has 15 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'price_binned' for feature 'price'.
+[2025-08-27 21:29:48] DEBUG: Feature 'price': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'price': Identified 741 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: Grouped 741 unique categories into 'smalls' for feature 'price'. These categories had volume less than 2.00% (100 rows).
+[2025-08-27 21:29:48] DEBUG: New column 'price_smalls' (with 'smalls' grouping) created in df_smalls for feature 'price'. It now has 24 unique values.
+[2025-08-27 21:29:48] DEBUG: Applying smalls grouping to binned column 'registration_date_binned' for feature 'registration_date'.
+[2025-08-27 21:29:48] DEBUG: Feature 'registration_date': Frequency table for binned column created with 5000 unique categories.
+[2025-08-27 21:29:48] DEBUG: Feature 'registration_date': Identified 3687 categories as 'smalls' candidates (excluding 'NULL').
+[2025-08-27 21:29:48] INFO: Grouped 3687 unique categories into 'smalls' for feature 'registration_date'. These categories had volume less than 2.00% (100 rows).
+[2025-08-27 21:29:48] DEBUG: New column 'registration_date_smalls' (with 'smalls' grouping) created in df_smalls for feature 'registration_date'. It now has 12 unique values.
+[2025-08-27 21:29:48] INFO: Exiting 'create_smalls_dataframe'. 'Smalls' grouped dataframe prepared.
+[2025-08-27 21:29:48] INFO: Feature summary saved to: 'output/feature_summary.csv'.
+[2025-08-27 21:29:48] INFO: Entering function 'generate_html_report'. Beginning construction of the interactive HTML report to: 'output/feature_report.html'.
+[2025-08-27 21:29:48] INFO: Generating HTML tabs for 19 features that are available for plotting after exclusions.
+[2025-08-27 21:29:48] DEBUG: [generate_html_report] Processing HTML content for feature: 'char_binary' (Assigned Main Tab ID: c87c6e2e-ca3e-4191-b3ab-5a9e92138ecb).
+[2025-08-27 21:29:49] INFO: Entering function 'generate_feature_visualizations' for feature: 'char_binary' (Original Type: character-logical).
+[2025-08-27 21:29:49] DEBUG: Confirmed presence of 'char_binary_smalls' in df_smalls for feature 'char_binary'. Proceeding with visualizations.
+[2025-08-27 21:29:49] INFO: Generating histogram for feature 'char_binary' using the 'char_binary_smalls' column.
+[2025-08-27 21:29:49] DEBUG: Histogram generated for 'char_binary' using 'char_binary_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:49] INFO: Generating pie chart for feature 'char_binary' using the 'char_binary_smalls' column.
+[2025-08-27 21:29:49] DEBUG: Pie chart generated for 'char_binary' using 'char_binary_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:49] INFO: Preparing detailed frequency/summary table for feature 'char_binary'.
+[2025-08-27 21:29:49] DEBUG: Frequency details for 'char_binary' (character/logical) showing all 2 categories.
+[2025-08-27 21:29:49] DEBUG: Frequency details table generated for 'char_binary' (character/logical, using binned data).
+[2025-08-27 21:29:49] INFO: Preparing stability plot for feature 'char_binary'. Checking date column availability.
+[2025-08-27 21:29:49] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'char_binary_smalls'.
+[2025-08-27 21:29:49] DEBUG: Filtered stability data for 'char_binary_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:49] WARNING: No non-NA data for date or feature category for 'char_binary_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:49] INFO: Preparing specific plot for feature 'char_binary' based on its data type ('character-logical').
+[2025-08-27 21:29:49] DEBUG: Mosaic Plot generated for 'char_binary' using 'char_binary_smalls' column. Embedded as Base64 image.
+[2025-08-27 21:29:49] INFO: Exiting function 'generate_feature_visualizations' for feature: 'char_binary'. All visuals assembled.
+[2025-08-27 21:29:49] DEBUG: All visualization elements prepared for feature 'char_binary'.
+[2025-08-27 21:29:49] DEBUG: Defined 6 sub-tabs for feature 'char_binary'.
+[2025-08-27 21:29:49] DEBUG: Sub-tab navigation links created for feature 'char_binary'.
+[2025-08-27 21:29:49] DEBUG: Sub-tab content containers created for feature 'char_binary'.
+[2025-08-27 21:29:49] DEBUG: Main tab panel assembled for feature 'char_binary'.
+[2025-08-27 21:29:49] DEBUG: [generate_html_report] Processing HTML content for feature: 'character_all_high' (Assigned Main Tab ID: c0b75b99-5bd0-4f23-8509-167e1eccd916).
+[2025-08-27 21:29:49] INFO: Entering function 'generate_feature_visualizations' for feature: 'character_all_high' (Original Type: character).
+[2025-08-27 21:29:49] DEBUG: Confirmed presence of 'character_all_high_smalls' in df_smalls for feature 'character_all_high'. Proceeding with visualizations.
+[2025-08-27 21:29:49] INFO: Generating histogram for feature 'character_all_high' using the 'character_all_high_smalls' column.
+[2025-08-27 21:29:49] DEBUG: Histogram generated for 'character_all_high' using 'character_all_high_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:49] INFO: Generating pie chart for feature 'character_all_high' using the 'character_all_high_smalls' column.
+[2025-08-27 21:29:49] DEBUG: Pie chart generated for 'character_all_high' using 'character_all_high_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:49] INFO: Preparing detailed frequency/summary table for feature 'character_all_high'.
+[2025-08-27 21:29:49] DEBUG: Frequency details for 'character_all_high' (character/logical) showing top 10 categories and an 'others' category.
+[2025-08-27 21:29:49] DEBUG: Frequency details table generated for 'character_all_high' (character/logical, using binned data).
+[2025-08-27 21:29:49] INFO: Preparing stability plot for feature 'character_all_high'. Checking date column availability.
+[2025-08-27 21:29:49] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'character_all_high_smalls'.
+[2025-08-27 21:29:49] DEBUG: Filtered stability data for 'character_all_high_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:49] WARNING: No non-NA data for date or feature category for 'character_all_high_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:49] INFO: Preparing specific plot for feature 'character_all_high' based on its data type ('character').
+[2025-08-27 21:29:49] DEBUG: Mosaic Plot generated for 'character_all_high' using 'character_all_high_smalls' column. Embedded as Base64 image.
+[2025-08-27 21:29:49] INFO: Exiting function 'generate_feature_visualizations' for feature: 'character_all_high'. All visuals assembled.
+[2025-08-27 21:29:49] DEBUG: All visualization elements prepared for feature 'character_all_high'.
+[2025-08-27 21:29:49] DEBUG: Defined 6 sub-tabs for feature 'character_all_high'.
+[2025-08-27 21:29:49] DEBUG: Sub-tab navigation links created for feature 'character_all_high'.
+[2025-08-27 21:29:49] DEBUG: Sub-tab content containers created for feature 'character_all_high'.
+[2025-08-27 21:29:49] DEBUG: Main tab panel assembled for feature 'character_all_high'.
+[2025-08-27 21:29:49] DEBUG: [generate_html_report] Processing HTML content for feature: 'character_dominant' (Assigned Main Tab ID: e6675df9-9104-401e-a662-b893e008f531).
+[2025-08-27 21:29:49] INFO: Entering function 'generate_feature_visualizations' for feature: 'character_dominant' (Original Type: character).
+[2025-08-27 21:29:49] DEBUG: Confirmed presence of 'character_dominant_smalls' in df_smalls for feature 'character_dominant'. Proceeding with visualizations.
+[2025-08-27 21:29:49] INFO: Generating histogram for feature 'character_dominant' using the 'character_dominant_smalls' column.
+[2025-08-27 21:29:49] DEBUG: Histogram generated for 'character_dominant' using 'character_dominant_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:49] INFO: Generating pie chart for feature 'character_dominant' using the 'character_dominant_smalls' column.
+[2025-08-27 21:29:49] DEBUG: Pie chart generated for 'character_dominant' using 'character_dominant_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:49] INFO: Preparing detailed frequency/summary table for feature 'character_dominant'.
+[2025-08-27 21:29:49] DEBUG: Frequency details for 'character_dominant' (character/logical) showing top 10 categories and an 'others' category.
+[2025-08-27 21:29:49] DEBUG: Frequency details table generated for 'character_dominant' (character/logical, using binned data).
+[2025-08-27 21:29:49] INFO: Preparing stability plot for feature 'character_dominant'. Checking date column availability.
+[2025-08-27 21:29:49] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'character_dominant_smalls'.
+[2025-08-27 21:29:49] DEBUG: Filtered stability data for 'character_dominant_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:49] WARNING: No non-NA data for date or feature category for 'character_dominant_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:49] INFO: Preparing specific plot for feature 'character_dominant' based on its data type ('character').
+[2025-08-27 21:29:49] DEBUG: Mosaic Plot generated for 'character_dominant' using 'character_dominant_smalls' column. Embedded as Base64 image.
+[2025-08-27 21:29:49] INFO: Exiting function 'generate_feature_visualizations' for feature: 'character_dominant'. All visuals assembled.
+[2025-08-27 21:29:49] DEBUG: All visualization elements prepared for feature 'character_dominant'.
+[2025-08-27 21:29:49] DEBUG: Defined 6 sub-tabs for feature 'character_dominant'.
+[2025-08-27 21:29:49] DEBUG: Sub-tab navigation links created for feature 'character_dominant'.
+[2025-08-27 21:29:49] DEBUG: Sub-tab content containers created for feature 'character_dominant'.
+[2025-08-27 21:29:49] DEBUG: Main tab panel assembled for feature 'character_dominant'.
+[2025-08-27 21:29:49] DEBUG: [generate_html_report] Processing HTML content for feature: 'character_random' (Assigned Main Tab ID: d85ef374-7e1c-427e-bbd5-999bfe2f7685).
+[2025-08-27 21:29:49] INFO: Entering function 'generate_feature_visualizations' for feature: 'character_random' (Original Type: character).
+[2025-08-27 21:29:49] DEBUG: Confirmed presence of 'character_random_smalls' in df_smalls for feature 'character_random'. Proceeding with visualizations.
+[2025-08-27 21:29:49] INFO: Generating histogram for feature 'character_random' using the 'character_random_smalls' column.
+[2025-08-27 21:29:50] DEBUG: Histogram generated for 'character_random' using 'character_random_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:50] INFO: Generating pie chart for feature 'character_random' using the 'character_random_smalls' column.
+[2025-08-27 21:29:50] DEBUG: Pie chart generated for 'character_random' using 'character_random_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:50] INFO: Preparing detailed frequency/summary table for feature 'character_random'.
+[2025-08-27 21:29:50] DEBUG: Frequency details for 'character_random' (character/logical) showing top 10 categories and an 'others' category.
+[2025-08-27 21:29:50] DEBUG: Frequency details table generated for 'character_random' (character/logical, using binned data).
+[2025-08-27 21:29:50] INFO: Preparing stability plot for feature 'character_random'. Checking date column availability.
+[2025-08-27 21:29:50] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'character_random_smalls'.
+[2025-08-27 21:29:50] DEBUG: Filtered stability data for 'character_random_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:50] WARNING: No non-NA data for date or feature category for 'character_random_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:50] INFO: Preparing specific plot for feature 'character_random' based on its data type ('character').
+[2025-08-27 21:29:50] DEBUG: Mosaic Plot generated for 'character_random' using 'character_random_smalls' column. Embedded as Base64 image.
+[2025-08-27 21:29:50] INFO: Exiting function 'generate_feature_visualizations' for feature: 'character_random'. All visuals assembled.
+[2025-08-27 21:29:50] DEBUG: All visualization elements prepared for feature 'character_random'.
+[2025-08-27 21:29:50] DEBUG: Defined 6 sub-tabs for feature 'character_random'.
+[2025-08-27 21:29:50] DEBUG: Sub-tab navigation links created for feature 'character_random'.
+[2025-08-27 21:29:50] DEBUG: Sub-tab content containers created for feature 'character_random'.
+[2025-08-27 21:29:50] DEBUG: Main tab panel assembled for feature 'character_random'.
+[2025-08-27 21:29:50] DEBUG: [generate_html_report] Processing HTML content for feature: 'character_some_low' (Assigned Main Tab ID: e509a38b-143a-4d57-9fe3-8549e57b123b).
+[2025-08-27 21:29:50] INFO: Entering function 'generate_feature_visualizations' for feature: 'character_some_low' (Original Type: character).
+[2025-08-27 21:29:50] DEBUG: Confirmed presence of 'character_some_low_smalls' in df_smalls for feature 'character_some_low'. Proceeding with visualizations.
+[2025-08-27 21:29:50] INFO: Generating histogram for feature 'character_some_low' using the 'character_some_low_smalls' column.
+[2025-08-27 21:29:50] DEBUG: Histogram generated for 'character_some_low' using 'character_some_low_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:50] INFO: Generating pie chart for feature 'character_some_low' using the 'character_some_low_smalls' column.
+[2025-08-27 21:29:50] DEBUG: Pie chart generated for 'character_some_low' using 'character_some_low_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:50] INFO: Preparing detailed frequency/summary table for feature 'character_some_low'.
+[2025-08-27 21:29:50] DEBUG: Frequency details for 'character_some_low' (character/logical) showing top 10 categories and an 'others' category.
+[2025-08-27 21:29:50] DEBUG: Frequency details table generated for 'character_some_low' (character/logical, using binned data).
+[2025-08-27 21:29:50] INFO: Preparing stability plot for feature 'character_some_low'. Checking date column availability.
+[2025-08-27 21:29:50] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'character_some_low_smalls'.
+[2025-08-27 21:29:50] DEBUG: Filtered stability data for 'character_some_low_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:50] WARNING: No non-NA data for date or feature category for 'character_some_low_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:50] INFO: Preparing specific plot for feature 'character_some_low' based on its data type ('character').
+[2025-08-27 21:29:50] DEBUG: Mosaic Plot generated for 'character_some_low' using 'character_some_low_smalls' column. Embedded as Base64 image.
+[2025-08-27 21:29:50] INFO: Exiting function 'generate_feature_visualizations' for feature: 'character_some_low'. All visuals assembled.
+[2025-08-27 21:29:50] DEBUG: All visualization elements prepared for feature 'character_some_low'.
+[2025-08-27 21:29:50] DEBUG: Defined 6 sub-tabs for feature 'character_some_low'.
+[2025-08-27 21:29:50] DEBUG: Sub-tab navigation links created for feature 'character_some_low'.
+[2025-08-27 21:29:50] DEBUG: Sub-tab content containers created for feature 'character_some_low'.
+[2025-08-27 21:29:50] DEBUG: Main tab panel assembled for feature 'character_some_low'.
+[2025-08-27 21:29:50] DEBUG: [generate_html_report] Processing HTML content for feature: 'days_since_registration_date' (Assigned Main Tab ID: f9eb39d3-e9b6-4ebe-96e3-73e50d2ff90d).
+[2025-08-27 21:29:50] INFO: Entering function 'generate_feature_visualizations' for feature: 'days_since_registration_date' (Original Type: integer).
+[2025-08-27 21:29:50] DEBUG: Confirmed presence of 'days_since_registration_date_smalls' in df_smalls for feature 'days_since_registration_date'. Proceeding with visualizations.
+[2025-08-27 21:29:50] INFO: Generating histogram for feature 'days_since_registration_date' using the 'days_since_registration_date_smalls' column.
+[2025-08-27 21:29:50] DEBUG: Histogram generated for 'days_since_registration_date' using 'days_since_registration_date_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:50] INFO: Generating pie chart for feature 'days_since_registration_date' using the 'days_since_registration_date_smalls' column.
+[2025-08-27 21:29:50] DEBUG: Pie chart generated for 'days_since_registration_date' using 'days_since_registration_date_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:50] INFO: Preparing detailed frequency/summary table for feature 'days_since_registration_date'.
+[2025-08-27 21:29:50] DEBUG: Descriptive statistics table generated for 'days_since_registration_date' (numeric/integer) using original data.
+[2025-08-27 21:29:50] INFO: Preparing stability plot for feature 'days_since_registration_date'. Checking date column availability.
+[2025-08-27 21:29:50] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'days_since_registration_date_smalls'.
+[2025-08-27 21:29:50] DEBUG: Filtered stability data for 'days_since_registration_date_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:50] WARNING: No non-NA data for date or feature category for 'days_since_registration_date_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:50] INFO: Preparing specific plot for feature 'days_since_registration_date' based on its data type ('integer').
+[2025-08-27 21:29:50] DEBUG: Density plot generated for 'days_since_registration_date' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-27 21:29:50] INFO: Exiting function 'generate_feature_visualizations' for feature: 'days_since_registration_date'. All visuals assembled.
+[2025-08-27 21:29:50] DEBUG: All visualization elements prepared for feature 'days_since_registration_date'.
+[2025-08-27 21:29:50] DEBUG: Defined 6 sub-tabs for feature 'days_since_registration_date'.
+[2025-08-27 21:29:50] DEBUG: Sub-tab navigation links created for feature 'days_since_registration_date'.
+[2025-08-27 21:29:50] DEBUG: Sub-tab content containers created for feature 'days_since_registration_date'.
+[2025-08-27 21:29:50] DEBUG: Main tab panel assembled for feature 'days_since_registration_date'.
+[2025-08-27 21:29:50] DEBUG: [generate_html_report] Processing HTML content for feature: 'int_binary' (Assigned Main Tab ID: 80e56ef2-ad0e-460c-a65d-ad23fb0c5fa0).
+[2025-08-27 21:29:50] INFO: Entering function 'generate_feature_visualizations' for feature: 'int_binary' (Original Type: integer).
+[2025-08-27 21:29:50] DEBUG: Confirmed presence of 'int_binary_smalls' in df_smalls for feature 'int_binary'. Proceeding with visualizations.
+[2025-08-27 21:29:50] INFO: Generating histogram for feature 'int_binary' using the 'int_binary_smalls' column.
+[2025-08-27 21:29:50] DEBUG: Histogram generated for 'int_binary' using 'int_binary_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:50] INFO: Generating pie chart for feature 'int_binary' using the 'int_binary_smalls' column.
+[2025-08-27 21:29:50] DEBUG: Pie chart generated for 'int_binary' using 'int_binary_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:50] INFO: Preparing detailed frequency/summary table for feature 'int_binary'.
+[2025-08-27 21:29:50] DEBUG: Descriptive statistics table generated for 'int_binary' (numeric/integer) using original data.
+[2025-08-27 21:29:50] INFO: Preparing stability plot for feature 'int_binary'. Checking date column availability.
+[2025-08-27 21:29:50] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'int_binary_smalls'.
+[2025-08-27 21:29:50] DEBUG: Filtered stability data for 'int_binary_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:50] WARNING: No non-NA data for date or feature category for 'int_binary_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:50] INFO: Preparing specific plot for feature 'int_binary' based on its data type ('integer').
+[2025-08-27 21:29:50] DEBUG: Density plot generated for 'int_binary' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-27 21:29:50] INFO: Exiting function 'generate_feature_visualizations' for feature: 'int_binary'. All visuals assembled.
+[2025-08-27 21:29:50] DEBUG: All visualization elements prepared for feature 'int_binary'.
+[2025-08-27 21:29:50] DEBUG: Defined 6 sub-tabs for feature 'int_binary'.
+[2025-08-27 21:29:50] DEBUG: Sub-tab navigation links created for feature 'int_binary'.
+[2025-08-27 21:29:50] DEBUG: Sub-tab content containers created for feature 'int_binary'.
+[2025-08-27 21:29:50] DEBUG: Main tab panel assembled for feature 'int_binary'.
+[2025-08-27 21:29:50] DEBUG: [generate_html_report] Processing HTML content for feature: 'integer_all_high' (Assigned Main Tab ID: 17f327d2-b5e7-4bd1-af79-660c421d05e2).
+[2025-08-27 21:29:50] INFO: Entering function 'generate_feature_visualizations' for feature: 'integer_all_high' (Original Type: integer).
+[2025-08-27 21:29:50] DEBUG: Confirmed presence of 'integer_all_high_smalls' in df_smalls for feature 'integer_all_high'. Proceeding with visualizations.
+[2025-08-27 21:29:50] INFO: Generating histogram for feature 'integer_all_high' using the 'integer_all_high_smalls' column.
+[2025-08-27 21:29:50] DEBUG: Histogram generated for 'integer_all_high' using 'integer_all_high_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:50] INFO: Generating pie chart for feature 'integer_all_high' using the 'integer_all_high_smalls' column.
+[2025-08-27 21:29:50] DEBUG: Pie chart generated for 'integer_all_high' using 'integer_all_high_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:50] INFO: Preparing detailed frequency/summary table for feature 'integer_all_high'.
+[2025-08-27 21:29:50] DEBUG: Descriptive statistics table generated for 'integer_all_high' (numeric/integer) using original data.
+[2025-08-27 21:29:50] INFO: Preparing stability plot for feature 'integer_all_high'. Checking date column availability.
+[2025-08-27 21:29:50] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'integer_all_high_smalls'.
+[2025-08-27 21:29:50] DEBUG: Filtered stability data for 'integer_all_high_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:50] WARNING: No non-NA data for date or feature category for 'integer_all_high_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:50] INFO: Preparing specific plot for feature 'integer_all_high' based on its data type ('integer').
+[2025-08-27 21:29:51] DEBUG: Density plot generated for 'integer_all_high' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-27 21:29:51] INFO: Exiting function 'generate_feature_visualizations' for feature: 'integer_all_high'. All visuals assembled.
+[2025-08-27 21:29:51] DEBUG: All visualization elements prepared for feature 'integer_all_high'.
+[2025-08-27 21:29:51] DEBUG: Defined 6 sub-tabs for feature 'integer_all_high'.
+[2025-08-27 21:29:51] DEBUG: Sub-tab navigation links created for feature 'integer_all_high'.
+[2025-08-27 21:29:51] DEBUG: Sub-tab content containers created for feature 'integer_all_high'.
+[2025-08-27 21:29:51] DEBUG: Main tab panel assembled for feature 'integer_all_high'.
+[2025-08-27 21:29:51] DEBUG: [generate_html_report] Processing HTML content for feature: 'integer_dominant' (Assigned Main Tab ID: 09d55e0e-e080-40ed-aba5-eaa0d5e1ed60).
+[2025-08-27 21:29:51] INFO: Entering function 'generate_feature_visualizations' for feature: 'integer_dominant' (Original Type: integer).
+[2025-08-27 21:29:51] DEBUG: Confirmed presence of 'integer_dominant_smalls' in df_smalls for feature 'integer_dominant'. Proceeding with visualizations.
+[2025-08-27 21:29:51] INFO: Generating histogram for feature 'integer_dominant' using the 'integer_dominant_smalls' column.
+[2025-08-27 21:29:51] DEBUG: Histogram generated for 'integer_dominant' using 'integer_dominant_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:51] INFO: Generating pie chart for feature 'integer_dominant' using the 'integer_dominant_smalls' column.
+[2025-08-27 21:29:51] DEBUG: Pie chart generated for 'integer_dominant' using 'integer_dominant_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:51] INFO: Preparing detailed frequency/summary table for feature 'integer_dominant'.
+[2025-08-27 21:29:51] DEBUG: Descriptive statistics table generated for 'integer_dominant' (numeric/integer) using original data.
+[2025-08-27 21:29:51] INFO: Preparing stability plot for feature 'integer_dominant'. Checking date column availability.
+[2025-08-27 21:29:51] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'integer_dominant_smalls'.
+[2025-08-27 21:29:51] DEBUG: Filtered stability data for 'integer_dominant_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:51] WARNING: No non-NA data for date or feature category for 'integer_dominant_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:51] INFO: Preparing specific plot for feature 'integer_dominant' based on its data type ('integer').
+[2025-08-27 21:29:51] DEBUG: Density plot generated for 'integer_dominant' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-27 21:29:51] INFO: Exiting function 'generate_feature_visualizations' for feature: 'integer_dominant'. All visuals assembled.
+[2025-08-27 21:29:51] DEBUG: All visualization elements prepared for feature 'integer_dominant'.
+[2025-08-27 21:29:51] DEBUG: Defined 6 sub-tabs for feature 'integer_dominant'.
+[2025-08-27 21:29:51] DEBUG: Sub-tab navigation links created for feature 'integer_dominant'.
+[2025-08-27 21:29:51] DEBUG: Sub-tab content containers created for feature 'integer_dominant'.
+[2025-08-27 21:29:51] DEBUG: Main tab panel assembled for feature 'integer_dominant'.
+[2025-08-27 21:29:51] DEBUG: [generate_html_report] Processing HTML content for feature: 'integer_random' (Assigned Main Tab ID: 38c92539-bca0-4eae-b302-fcdb846f1ff7).
+[2025-08-27 21:29:51] INFO: Entering function 'generate_feature_visualizations' for feature: 'integer_random' (Original Type: integer).
+[2025-08-27 21:29:51] DEBUG: Confirmed presence of 'integer_random_smalls' in df_smalls for feature 'integer_random'. Proceeding with visualizations.
+[2025-08-27 21:29:51] INFO: Generating histogram for feature 'integer_random' using the 'integer_random_smalls' column.
+[2025-08-27 21:29:51] DEBUG: Histogram generated for 'integer_random' using 'integer_random_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:51] INFO: Generating pie chart for feature 'integer_random' using the 'integer_random_smalls' column.
+[2025-08-27 21:29:51] DEBUG: Pie chart generated for 'integer_random' using 'integer_random_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:51] INFO: Preparing detailed frequency/summary table for feature 'integer_random'.
+[2025-08-27 21:29:51] DEBUG: Descriptive statistics table generated for 'integer_random' (numeric/integer) using original data.
+[2025-08-27 21:29:51] INFO: Preparing stability plot for feature 'integer_random'. Checking date column availability.
+[2025-08-27 21:29:51] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'integer_random_smalls'.
+[2025-08-27 21:29:51] DEBUG: Filtered stability data for 'integer_random_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:51] WARNING: No non-NA data for date or feature category for 'integer_random_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:51] INFO: Preparing specific plot for feature 'integer_random' based on its data type ('integer').
+[2025-08-27 21:29:51] DEBUG: Density plot generated for 'integer_random' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-27 21:29:51] INFO: Exiting function 'generate_feature_visualizations' for feature: 'integer_random'. All visuals assembled.
+[2025-08-27 21:29:51] DEBUG: All visualization elements prepared for feature 'integer_random'.
+[2025-08-27 21:29:51] DEBUG: Defined 6 sub-tabs for feature 'integer_random'.
+[2025-08-27 21:29:51] DEBUG: Sub-tab navigation links created for feature 'integer_random'.
+[2025-08-27 21:29:51] DEBUG: Sub-tab content containers created for feature 'integer_random'.
+[2025-08-27 21:29:51] DEBUG: Main tab panel assembled for feature 'integer_random'.
+[2025-08-27 21:29:51] DEBUG: [generate_html_report] Processing HTML content for feature: 'integer_some_low' (Assigned Main Tab ID: 2cda6a50-c76b-482d-9441-dcd4e667e4d7).
+[2025-08-27 21:29:51] INFO: Entering function 'generate_feature_visualizations' for feature: 'integer_some_low' (Original Type: integer).
+[2025-08-27 21:29:51] DEBUG: Confirmed presence of 'integer_some_low_smalls' in df_smalls for feature 'integer_some_low'. Proceeding with visualizations.
+[2025-08-27 21:29:51] INFO: Generating histogram for feature 'integer_some_low' using the 'integer_some_low_smalls' column.
+[2025-08-27 21:29:51] DEBUG: Histogram generated for 'integer_some_low' using 'integer_some_low_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:51] INFO: Generating pie chart for feature 'integer_some_low' using the 'integer_some_low_smalls' column.
+[2025-08-27 21:29:51] DEBUG: Pie chart generated for 'integer_some_low' using 'integer_some_low_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:51] INFO: Preparing detailed frequency/summary table for feature 'integer_some_low'.
+[2025-08-27 21:29:51] DEBUG: Descriptive statistics table generated for 'integer_some_low' (numeric/integer) using original data.
+[2025-08-27 21:29:51] INFO: Preparing stability plot for feature 'integer_some_low'. Checking date column availability.
+[2025-08-27 21:29:51] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'integer_some_low_smalls'.
+[2025-08-27 21:29:51] DEBUG: Filtered stability data for 'integer_some_low_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:51] WARNING: No non-NA data for date or feature category for 'integer_some_low_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:51] INFO: Preparing specific plot for feature 'integer_some_low' based on its data type ('integer').
+[2025-08-27 21:29:51] DEBUG: Density plot generated for 'integer_some_low' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-27 21:29:51] INFO: Exiting function 'generate_feature_visualizations' for feature: 'integer_some_low'. All visuals assembled.
+[2025-08-27 21:29:51] DEBUG: All visualization elements prepared for feature 'integer_some_low'.
+[2025-08-27 21:29:51] DEBUG: Defined 6 sub-tabs for feature 'integer_some_low'.
+[2025-08-27 21:29:51] DEBUG: Sub-tab navigation links created for feature 'integer_some_low'.
+[2025-08-27 21:29:51] DEBUG: Sub-tab content containers created for feature 'integer_some_low'.
+[2025-08-27 21:29:51] DEBUG: Main tab panel assembled for feature 'integer_some_low'.
+[2025-08-27 21:29:51] DEBUG: [generate_html_report] Processing HTML content for feature: 'num_binary' (Assigned Main Tab ID: 2b0dda9f-538a-48a9-8ec8-e88a774478df).
+[2025-08-27 21:29:51] INFO: Entering function 'generate_feature_visualizations' for feature: 'num_binary' (Original Type: integer-logical).
+[2025-08-27 21:29:51] DEBUG: Confirmed presence of 'num_binary_smalls' in df_smalls for feature 'num_binary'. Proceeding with visualizations.
+[2025-08-27 21:29:51] INFO: Generating histogram for feature 'num_binary' using the 'num_binary_smalls' column.
+[2025-08-27 21:29:51] DEBUG: Histogram generated for 'num_binary' using 'num_binary_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:51] INFO: Generating pie chart for feature 'num_binary' using the 'num_binary_smalls' column.
+[2025-08-27 21:29:51] DEBUG: Pie chart generated for 'num_binary' using 'num_binary_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:51] INFO: Preparing detailed frequency/summary table for feature 'num_binary'.
+[2025-08-27 21:29:51] DEBUG: Frequency details for 'num_binary' (character/logical) showing all 2 categories.
+[2025-08-27 21:29:51] DEBUG: Frequency details table generated for 'num_binary' (character/logical, using binned data).
+[2025-08-27 21:29:51] INFO: Preparing stability plot for feature 'num_binary'. Checking date column availability.
+[2025-08-27 21:29:51] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'num_binary_smalls'.
+[2025-08-27 21:29:51] DEBUG: Filtered stability data for 'num_binary_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:51] WARNING: No non-NA data for date or feature category for 'num_binary_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:51] INFO: Preparing specific plot for feature 'num_binary' based on its data type ('integer-logical').
+[2025-08-27 21:29:51] DEBUG: Mosaic Plot generated for 'num_binary' using 'num_binary_smalls' column. Embedded as Base64 image.
+[2025-08-27 21:29:51] INFO: Exiting function 'generate_feature_visualizations' for feature: 'num_binary'. All visuals assembled.
+[2025-08-27 21:29:51] DEBUG: All visualization elements prepared for feature 'num_binary'.
+[2025-08-27 21:29:51] DEBUG: Defined 6 sub-tabs for feature 'num_binary'.
+[2025-08-27 21:29:51] DEBUG: Sub-tab navigation links created for feature 'num_binary'.
+[2025-08-27 21:29:51] DEBUG: Sub-tab content containers created for feature 'num_binary'.
+[2025-08-27 21:29:51] DEBUG: Main tab panel assembled for feature 'num_binary'.
+[2025-08-27 21:29:51] DEBUG: [generate_html_report] Processing HTML content for feature: 'numeric_all_high' (Assigned Main Tab ID: 38b62316-2f87-4f16-9fa7-337756dc4aab).
+[2025-08-27 21:29:51] INFO: Entering function 'generate_feature_visualizations' for feature: 'numeric_all_high' (Original Type: numeric).
+[2025-08-27 21:29:51] DEBUG: Confirmed presence of 'numeric_all_high_smalls' in df_smalls for feature 'numeric_all_high'. Proceeding with visualizations.
+[2025-08-27 21:29:51] INFO: Generating histogram for feature 'numeric_all_high' using the 'numeric_all_high_smalls' column.
+[2025-08-27 21:29:52] DEBUG: Histogram generated for 'numeric_all_high' using 'numeric_all_high_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:52] INFO: Generating pie chart for feature 'numeric_all_high' using the 'numeric_all_high_smalls' column.
+[2025-08-27 21:29:52] DEBUG: Pie chart generated for 'numeric_all_high' using 'numeric_all_high_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:52] INFO: Preparing detailed frequency/summary table for feature 'numeric_all_high'.
+[2025-08-27 21:29:52] DEBUG: Descriptive statistics table generated for 'numeric_all_high' (numeric/integer) using original data.
+[2025-08-27 21:29:52] INFO: Preparing stability plot for feature 'numeric_all_high'. Checking date column availability.
+[2025-08-27 21:29:52] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'numeric_all_high_smalls'.
+[2025-08-27 21:29:52] DEBUG: Filtered stability data for 'numeric_all_high_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:52] WARNING: No non-NA data for date or feature category for 'numeric_all_high_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:52] INFO: Preparing specific plot for feature 'numeric_all_high' based on its data type ('numeric').
+[2025-08-27 21:29:52] DEBUG: Density plot generated for 'numeric_all_high' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-27 21:29:52] INFO: Exiting function 'generate_feature_visualizations' for feature: 'numeric_all_high'. All visuals assembled.
+[2025-08-27 21:29:52] DEBUG: All visualization elements prepared for feature 'numeric_all_high'.
+[2025-08-27 21:29:52] DEBUG: Defined 6 sub-tabs for feature 'numeric_all_high'.
+[2025-08-27 21:29:52] DEBUG: Sub-tab navigation links created for feature 'numeric_all_high'.
+[2025-08-27 21:29:52] DEBUG: Sub-tab content containers created for feature 'numeric_all_high'.
+[2025-08-27 21:29:52] DEBUG: Main tab panel assembled for feature 'numeric_all_high'.
+[2025-08-27 21:29:52] DEBUG: [generate_html_report] Processing HTML content for feature: 'numeric_dominant' (Assigned Main Tab ID: d30b7aa4-42ce-41ed-ae0f-bb990be615d0).
+[2025-08-27 21:29:52] INFO: Entering function 'generate_feature_visualizations' for feature: 'numeric_dominant' (Original Type: numeric).
+[2025-08-27 21:29:52] DEBUG: Confirmed presence of 'numeric_dominant_smalls' in df_smalls for feature 'numeric_dominant'. Proceeding with visualizations.
+[2025-08-27 21:29:52] INFO: Generating histogram for feature 'numeric_dominant' using the 'numeric_dominant_smalls' column.
+[2025-08-27 21:29:52] DEBUG: Histogram generated for 'numeric_dominant' using 'numeric_dominant_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:52] INFO: Generating pie chart for feature 'numeric_dominant' using the 'numeric_dominant_smalls' column.
+[2025-08-27 21:29:52] DEBUG: Pie chart generated for 'numeric_dominant' using 'numeric_dominant_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:52] INFO: Preparing detailed frequency/summary table for feature 'numeric_dominant'.
+[2025-08-27 21:29:52] DEBUG: Descriptive statistics table generated for 'numeric_dominant' (numeric/integer) using original data.
+[2025-08-27 21:29:52] INFO: Preparing stability plot for feature 'numeric_dominant'. Checking date column availability.
+[2025-08-27 21:29:52] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'numeric_dominant_smalls'.
+[2025-08-27 21:29:52] DEBUG: Filtered stability data for 'numeric_dominant_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:52] WARNING: No non-NA data for date or feature category for 'numeric_dominant_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:52] INFO: Preparing specific plot for feature 'numeric_dominant' based on its data type ('numeric').
+[2025-08-27 21:29:52] DEBUG: Density plot generated for 'numeric_dominant' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-27 21:29:52] INFO: Exiting function 'generate_feature_visualizations' for feature: 'numeric_dominant'. All visuals assembled.
+[2025-08-27 21:29:52] DEBUG: All visualization elements prepared for feature 'numeric_dominant'.
+[2025-08-27 21:29:52] DEBUG: Defined 6 sub-tabs for feature 'numeric_dominant'.
+[2025-08-27 21:29:52] DEBUG: Sub-tab navigation links created for feature 'numeric_dominant'.
+[2025-08-27 21:29:52] DEBUG: Sub-tab content containers created for feature 'numeric_dominant'.
+[2025-08-27 21:29:52] DEBUG: Main tab panel assembled for feature 'numeric_dominant'.
+[2025-08-27 21:29:52] DEBUG: [generate_html_report] Processing HTML content for feature: 'numeric_random' (Assigned Main Tab ID: 148968fc-a26a-4f29-abea-f8c7b0b7b045).
+[2025-08-27 21:29:52] INFO: Entering function 'generate_feature_visualizations' for feature: 'numeric_random' (Original Type: numeric).
+[2025-08-27 21:29:52] DEBUG: Confirmed presence of 'numeric_random_smalls' in df_smalls for feature 'numeric_random'. Proceeding with visualizations.
+[2025-08-27 21:29:52] INFO: Generating histogram for feature 'numeric_random' using the 'numeric_random_smalls' column.
+[2025-08-27 21:29:52] DEBUG: Histogram generated for 'numeric_random' using 'numeric_random_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:52] INFO: Generating pie chart for feature 'numeric_random' using the 'numeric_random_smalls' column.
+[2025-08-27 21:29:52] DEBUG: Pie chart generated for 'numeric_random' using 'numeric_random_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:52] INFO: Preparing detailed frequency/summary table for feature 'numeric_random'.
+[2025-08-27 21:29:52] DEBUG: Descriptive statistics table generated for 'numeric_random' (numeric/integer) using original data.
+[2025-08-27 21:29:52] INFO: Preparing stability plot for feature 'numeric_random'. Checking date column availability.
+[2025-08-27 21:29:52] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'numeric_random_smalls'.
+[2025-08-27 21:29:52] DEBUG: Filtered stability data for 'numeric_random_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:52] WARNING: No non-NA data for date or feature category for 'numeric_random_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:52] INFO: Preparing specific plot for feature 'numeric_random' based on its data type ('numeric').
+[2025-08-27 21:29:52] DEBUG: Density plot generated for 'numeric_random' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-27 21:29:52] INFO: Exiting function 'generate_feature_visualizations' for feature: 'numeric_random'. All visuals assembled.
+[2025-08-27 21:29:52] DEBUG: All visualization elements prepared for feature 'numeric_random'.
+[2025-08-27 21:29:52] DEBUG: Defined 6 sub-tabs for feature 'numeric_random'.
+[2025-08-27 21:29:52] DEBUG: Sub-tab navigation links created for feature 'numeric_random'.
+[2025-08-27 21:29:52] DEBUG: Sub-tab content containers created for feature 'numeric_random'.
+[2025-08-27 21:29:52] DEBUG: Main tab panel assembled for feature 'numeric_random'.
+[2025-08-27 21:29:52] DEBUG: [generate_html_report] Processing HTML content for feature: 'numeric_some_low' (Assigned Main Tab ID: d2a8fc74-3b93-4b96-b902-7c4a51cd92b7).
+[2025-08-27 21:29:52] INFO: Entering function 'generate_feature_visualizations' for feature: 'numeric_some_low' (Original Type: numeric).
+[2025-08-27 21:29:52] DEBUG: Confirmed presence of 'numeric_some_low_smalls' in df_smalls for feature 'numeric_some_low'. Proceeding with visualizations.
+[2025-08-27 21:29:52] INFO: Generating histogram for feature 'numeric_some_low' using the 'numeric_some_low_smalls' column.
+[2025-08-27 21:29:52] DEBUG: Histogram generated for 'numeric_some_low' using 'numeric_some_low_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:52] INFO: Generating pie chart for feature 'numeric_some_low' using the 'numeric_some_low_smalls' column.
+[2025-08-27 21:29:52] DEBUG: Pie chart generated for 'numeric_some_low' using 'numeric_some_low_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:52] INFO: Preparing detailed frequency/summary table for feature 'numeric_some_low'.
+[2025-08-27 21:29:52] DEBUG: Descriptive statistics table generated for 'numeric_some_low' (numeric/integer) using original data.
+[2025-08-27 21:29:52] INFO: Preparing stability plot for feature 'numeric_some_low'. Checking date column availability.
+[2025-08-27 21:29:52] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'numeric_some_low_smalls'.
+[2025-08-27 21:29:52] DEBUG: Filtered stability data for 'numeric_some_low_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:52] WARNING: No non-NA data for date or feature category for 'numeric_some_low_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:52] INFO: Preparing specific plot for feature 'numeric_some_low' based on its data type ('numeric').
+[2025-08-27 21:29:52] DEBUG: Density plot generated for 'numeric_some_low' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-27 21:29:52] INFO: Exiting function 'generate_feature_visualizations' for feature: 'numeric_some_low'. All visuals assembled.
+[2025-08-27 21:29:52] DEBUG: All visualization elements prepared for feature 'numeric_some_low'.
+[2025-08-27 21:29:52] DEBUG: Defined 6 sub-tabs for feature 'numeric_some_low'.
+[2025-08-27 21:29:52] DEBUG: Sub-tab navigation links created for feature 'numeric_some_low'.
+[2025-08-27 21:29:52] DEBUG: Sub-tab content containers created for feature 'numeric_some_low'.
+[2025-08-27 21:29:52] DEBUG: Main tab panel assembled for feature 'numeric_some_low'.
+[2025-08-27 21:29:52] DEBUG: [generate_html_report] Processing HTML content for feature: 'order_date' (Assigned Main Tab ID: 120427c1-0ef2-45a8-a836-bcd16572c869).
+[2025-08-27 21:29:52] INFO: Entering function 'generate_feature_visualizations' for feature: 'order_date' (Original Type: date).
+[2025-08-27 21:29:52] DEBUG: Confirmed presence of 'order_date_smalls' in df_smalls for feature 'order_date'. Proceeding with visualizations.
+[2025-08-27 21:29:52] INFO: Generating histogram for feature 'order_date' using the 'order_date_smalls' column.
+[2025-08-27 21:29:53] DEBUG: Histogram generated for 'order_date' using 'order_date_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:53] INFO: Generating pie chart for feature 'order_date' using the 'order_date_smalls' column.
+[2025-08-27 21:29:53] DEBUG: Pie chart generated for 'order_date' using 'order_date_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:53] INFO: Preparing detailed frequency/summary table for feature 'order_date'.
+[2025-08-27 21:29:53] DEBUG: Frequency details for 'order_date' (date/POSIXct) showing top 10 binned categories and an 'others' category.
+[2025-08-27 21:29:53] DEBUG: Frequency details table generated for 'order_date' (date/POSIXct, using binned data).
+[2025-08-27 21:29:53] INFO: Preparing stability plot for feature 'order_date'. Checking date column availability.
+[2025-08-27 21:29:53] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'order_date_smalls'.
+[2025-08-27 21:29:53] DEBUG: Filtered stability data for 'order_date_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:53] WARNING: No non-NA data for date or feature category for 'order_date_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:53] INFO: Preparing specific plot for feature 'order_date' based on its data type ('date').
+[2025-08-27 21:29:53] DEBUG: Aggregated daily counts for calendar heatmap for 'order_date'. Total unique days: 101.
+[2025-08-27 21:29:53] DEBUG: Calendar heatmap for 'order_date': Data spans from year 2024 to 2024.
+[2025-08-27 21:29:53] DEBUG: Calendar Heatmap generated for 'order_date' using original date data (excluding NULLs). Interactive plot prepared.
+[2025-08-27 21:29:53] INFO: Exiting function 'generate_feature_visualizations' for feature: 'order_date'. All visuals assembled.
+[2025-08-27 21:29:53] DEBUG: All visualization elements prepared for feature 'order_date'.
+[2025-08-27 21:29:53] DEBUG: Defined 6 sub-tabs for feature 'order_date'.
+[2025-08-27 21:29:53] DEBUG: Sub-tab navigation links created for feature 'order_date'.
+[2025-08-27 21:29:53] DEBUG: Sub-tab content containers created for feature 'order_date'.
+[2025-08-27 21:29:53] DEBUG: Main tab panel assembled for feature 'order_date'.
+[2025-08-27 21:29:53] DEBUG: [generate_html_report] Processing HTML content for feature: 'price' (Assigned Main Tab ID: a1e96039-c068-432a-b00b-ee7f34063c19).
+[2025-08-27 21:29:53] INFO: Entering function 'generate_feature_visualizations' for feature: 'price' (Original Type: numeric).
+[2025-08-27 21:29:53] DEBUG: Confirmed presence of 'price_smalls' in df_smalls for feature 'price'. Proceeding with visualizations.
+[2025-08-27 21:29:53] INFO: Generating histogram for feature 'price' using the 'price_smalls' column.
+[2025-08-27 21:29:53] DEBUG: Histogram generated for 'price' using 'price_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:53] INFO: Generating pie chart for feature 'price' using the 'price_smalls' column.
+[2025-08-27 21:29:53] DEBUG: Pie chart generated for 'price' using 'price_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:53] INFO: Preparing detailed frequency/summary table for feature 'price'.
+[2025-08-27 21:29:53] DEBUG: Descriptive statistics table generated for 'price' (numeric/integer) using original data.
+[2025-08-27 21:29:53] INFO: Preparing stability plot for feature 'price'. Checking date column availability.
+[2025-08-27 21:29:53] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'price_smalls'.
+[2025-08-27 21:29:53] DEBUG: Filtered stability data for 'price_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:53] WARNING: No non-NA data for date or feature category for 'price_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:53] INFO: Preparing specific plot for feature 'price' based on its data type ('numeric').
+[2025-08-27 21:29:53] DEBUG: Density plot generated for 'price' using original data (excluding NULLs). Interactive plot prepared.
+[2025-08-27 21:29:53] INFO: Exiting function 'generate_feature_visualizations' for feature: 'price'. All visuals assembled.
+[2025-08-27 21:29:53] DEBUG: All visualization elements prepared for feature 'price'.
+[2025-08-27 21:29:53] DEBUG: Defined 6 sub-tabs for feature 'price'.
+[2025-08-27 21:29:53] DEBUG: Sub-tab navigation links created for feature 'price'.
+[2025-08-27 21:29:53] DEBUG: Sub-tab content containers created for feature 'price'.
+[2025-08-27 21:29:53] DEBUG: Main tab panel assembled for feature 'price'.
+[2025-08-27 21:29:53] DEBUG: [generate_html_report] Processing HTML content for feature: 'registration_date' (Assigned Main Tab ID: b81bf193-7e90-4ded-8345-294f47e929d7).
+[2025-08-27 21:29:53] INFO: Entering function 'generate_feature_visualizations' for feature: 'registration_date' (Original Type: date).
+[2025-08-27 21:29:53] DEBUG: Confirmed presence of 'registration_date_smalls' in df_smalls for feature 'registration_date'. Proceeding with visualizations.
+[2025-08-27 21:29:53] INFO: Generating histogram for feature 'registration_date' using the 'registration_date_smalls' column.
+[2025-08-27 21:29:53] DEBUG: Histogram generated for 'registration_date' using 'registration_date_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:53] INFO: Generating pie chart for feature 'registration_date' using the 'registration_date_smalls' column.
+[2025-08-27 21:29:53] DEBUG: Pie chart generated for 'registration_date' using 'registration_date_smalls' column. Interactive plot prepared.
+[2025-08-27 21:29:53] INFO: Preparing detailed frequency/summary table for feature 'registration_date'.
+[2025-08-27 21:29:53] DEBUG: Frequency details for 'registration_date' (date/POSIXct) showing top 10 binned categories and an 'others' category.
+[2025-08-27 21:29:53] DEBUG: Frequency details table generated for 'registration_date' (date/POSIXct, using binned data).
+[2025-08-27 21:29:53] INFO: Preparing stability plot for feature 'registration_date'. Checking date column availability.
+[2025-08-27 21:29:53] INFO: Entering function 'generate_stability_plots'. Preparing to generate stability plots for feature: 'registration_date_smalls'.
+[2025-08-27 21:29:53] DEBUG: Filtered stability data for 'registration_date_smalls': 0 rows after removing NAs in date and feature columns.
+[2025-08-27 21:29:53] WARNING: No non-NA data for date or feature category for 'registration_date_smalls' after filtering. Skipping stability plots.
+[2025-08-27 21:29:53] INFO: Preparing specific plot for feature 'registration_date' based on its data type ('date').
+[2025-08-27 21:29:53] DEBUG: Aggregated daily counts for calendar heatmap for 'registration_date'. Total unique days: 365.
+[2025-08-27 21:29:53] DEBUG: Calendar heatmap for 'registration_date': Data spans from year 2023 to 2023.
+[2025-08-27 21:29:54] DEBUG: Calendar Heatmap generated for 'registration_date' using original date data (excluding NULLs). Interactive plot prepared.
+[2025-08-27 21:29:54] INFO: Exiting function 'generate_feature_visualizations' for feature: 'registration_date'. All visuals assembled.
+[2025-08-27 21:29:54] DEBUG: All visualization elements prepared for feature 'registration_date'.
+[2025-08-27 21:29:54] DEBUG: Defined 6 sub-tabs for feature 'registration_date'.
+[2025-08-27 21:29:54] DEBUG: Sub-tab navigation links created for feature 'registration_date'.
+[2025-08-27 21:29:54] DEBUG: Sub-tab content containers created for feature 'registration_date'.
+[2025-08-27 21:29:54] DEBUG: Main tab panel assembled for feature 'registration_date'.
+[2025-08-27 21:29:54] INFO: All feature tab contents assembled with their respective sub-tabs.
+[2025-08-27 21:29:54] DEBUG: Main navigation links (tabs) created.
+[2025-08-27 21:29:54] DEBUG: Main tab content containers created.
+[2025-08-27 21:29:54] DEBUG: Full HTML page structure assembled using htmltools.
+[2025-08-27 21:29:57] INFO: Self-contained HTML report successfully generated and saved to: 'output/feature_report.html'.
+[2025-08-27 21:29:57] INFO: HTML report generated and saved to: 'output/feature_report.html'.
+[2025-08-27 21:29:57] INFO: Data profiling report generation process completed.
